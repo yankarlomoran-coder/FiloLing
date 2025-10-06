@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="es" data-current="nietzsche">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nietzsche — Reportaje | FiloLing</title>
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <meta name="description" content="Reportaje extenso sobre Friedrich Nietzsche — filosofía, moral y relevancia actual." />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../reportaje.css">
+  <script src="../app.js" defer></script>
+  <script src="../sidebar.js" defer></script>
+</head>
+<body>
+  <div class="site">
+    
+    <!-- Contenedor buscador con subtítulo -->
+<div class="search-container">
+  <!-- Subtítulo dinámico -->
+  <p class="dynamic-subtitle"
+     data-es="“El hombre es algo que debe ser superado.”"
+     data-en="“Man is something that must be overcome.”">
+     “El hombre es algo que debe ser superado.”
+  </p>
+
+  <!-- Barra de búsqueda -->
+  <div class="search-box">
+    <!-- Resultados del buscador -->
+    <div id="search-results" class="search-results"></div>
+
+    <input type="text" id="search-input" placeholder="Buscar..." 
+           data-es="Buscar..." data-en="Search...">
+    <button type="submit" class="search-btn" aria-label="Buscar">
+      <img src="/img/search.svg" alt="Buscar">
+    </button>
+  </div>
+</div>
+
+
+<!-- === HEADER === -->
+  
+<header class="header">
+  <a href="/index.html" class="brand">
+    <img src="/img/logo.png" alt="Logo FiloLing" class="logo">
+    <div>
+      <h1>FiloLing</h1>
+      <p data-es="Un espacio para pensar juntos." 
+         data-en="A space to think together.">
+         Un espacio para pensar juntos.
+      </p>
+    </div>
+  </a>
+
+  
+
+  <!-- Navegación -->
+  <nav class="nav">
+  <div class="dropdown">
+    <a href="/index.html#reportajes" data-es="Reportajes" data-en="Reports">Reportajes</a>
+    <div class="dropdown-content">
+            <a href="nietzsche.html">Friedrich Nietzsche</a>
+            <a href="beauvoir.html">Simone de Beauvoir</a>
+            <a href="fanon.html">Frantz Fanon</a>
+            <a href="sen.html">Amartya Sen</a>
+            <a href="filosofia-aplicada.html" data-es="Filosofía Aplicada" data-en="Applied Philosophy">Filosofía Aplicada</a>
+          </div>
+  </div>
+
+  <a href="/index.html#noticias" data-es="Noticias" data-en="News">Noticias</a>
+  <a href="/index.html#entrevistas" data-es="Entrevistas" data-en="Interviews">Entrevistas</a>
+  <a href="/index.html#columnas" data-es="Columnas" data-en="Columns">Columnas</a>
+  <a href="/index.html#resenas" data-es="Reseñas" data-en="Reviews">Reseñas</a>
+  <a href="/index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a>
+</nav>
+
+
+  <!-- Extras: idioma, modo oscuro -->
+  <div class="header-extras">
+    
+    <!-- Selector de idioma con banderas -->
+    <div class="lang">
+      <button class="lang-btn" data-lang="es" aria-pressed="true">
+        <img src="/img/flag-es.svg" alt="Español"> ES
+      </button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">
+        <img src="/img/flag-us.svg" alt="English"> EN
+      </button>
+    </div>
+
+    <!-- Botón modo oscuro -->
+    <button class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  </div>
+</header>
+
+    <!-- === CONTENIDO PRINCIPAL === -->
+<div class="content">
+  <main>
+    <h1 class="philo-title">Friedrich Nietzsche</h1>
+    <article>
+      <section>
+        <h2 data-es="Introducción" data-en="Introduction">Introducción</h2>
+        <p data-es="Friedrich Nietzsche (1844–1900) no solo fue un filósofo alemán, sino también un crítico cultural, filólogo y pensador radical que desafió los cimientos de la filosofía occidental. Su estilo fragmentario y aforístico rompe con la tradición académica de tratados sistemáticos, proponiendo en su lugar un pensamiento que combina análisis, metáforas y provocaciones. La pregunta central que recorre su obra es: ¿cómo vivir en un mundo en el que los valores tradicionales han perdido su fuerza?"
+           data-en="Friedrich Nietzsche (1844–1900) was not only a German philosopher but also a cultural critic, philologist, and radical thinker who challenged the very foundations of Western philosophy. His fragmentary, aphoristic style broke with the academic tradition of systematic treatises, offering instead a thought that blends analysis, metaphor, and provocation. The central question running through his work is: how can we live in a world where traditional values have lost their force?">
+        </p>
+         <!-- Imagen nietzsche -->
+        <figure>
+          <img src="../img/nietzsche-portrait.jpg" alt="Retrato de Friedrich Nietzsche">
+          <figcaption data-es="Retrato de Friedrich Nietzsche"
+                      data-en="Portrait of Friedrich Nietzsche"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="Contexto histórico y biográfico" 
+            data-en="Historical and Biographical Context">
+          
+        </h2>
+        <p data-es="Nietzsche nació en Röcken, en Prusia, en 1844. Fue hijo de un pastor protestante, pero desde joven quedó marcado por la muerte temprana de su padre y su hermano menor, lo cual contribuyó a su sensibilidad ante el sufrimiento humano y la fragilidad de las certezas religiosas. Estudió filología clásica y fue profesor universitario con apenas 24 años, aunque renunció debido a problemas de salud que lo acompañaron toda su vida. <br><br>
+                    El siglo XIX era una época convulsionada: avances científicos (Darwin), cuestionamientos religiosos, expansión del capitalismo, conflictos políticos y un ambiente cultural en el que el sentido de la vida ya no estaba garantizado por la tradición. Nietzsche vivió esta crisis como un reto filosófico: si las antiguas verdades se derrumban, ¿qué nos queda?"
+           data-en="Nietzsche was born in Röcken, Prussia, in 1844. The son of a Protestant pastor, he was deeply marked by the early deaths of his father and younger brother, which shaped his sensitivity toward human suffering and the fragility of religious certainties. He studied classical philology and became a university professor at just 24, though he resigned due to health problems that plagued him throughout his life. <br><br>
+                    The 19th century was a time of upheaval: scientific advances (Darwin), religious questioning, the expansion of capitalism, political conflicts, and a cultural environment in which the meaning of life was no longer guaranteed by tradition. Nietzsche experienced this crisis as a philosophical challenge: if the old truths collapse, what remains?">
+           
+        </p>
+         <!-- Imagen contextual -->
+        <figure>
+          <img src="../img/19th-century-germany.jpg" alt="Alemania del siglo XIX">
+          <figcaption data-es="Alemania del siglo XIX: contexto histórico de Nietzsche"
+                      data-en="19th-century Germany: Nietzsche's historical context"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="La muerte de Dios" data-en="The Death of God">La muerte de Dios</h2>
+        <p data-es="Su expresión más famosa es la sentencia: 'Dios ha muerto'. Con ella no se refiere a un hecho literal, sino a un diagnóstico cultural. En Occidente, la fe en Dios había sustentado valores morales universales: el bien, el mal, la verdad. Sin embargo, el avance de la modernidad —la ciencia, el escepticismo, la secularización— había minado esa fe. Para Nietzsche, las certezas tradicionales ya no podían sostenerse. La muerte de Dios significa, entonces, la pérdida de un fundamento absoluto para la moral y el conocimiento. <br><br>
+                    Este diagnóstico, lejos de ser un triunfo, abre un vacío: sin Dios, la humanidad corre el riesgo de caer en el nihilismo, es decir, en la sensación de que nada tiene sentido ni valor. El reto nietzscheano consiste en atravesar ese nihilismo y convertirlo en una oportunidad para crear nuevos valores."
+           data-en="His most famous expression is the sentence: 'God is dead'. He did not mean this literally, but as a cultural diagnosis. In the West, faith in God had underpinned universal moral values such as good, evil, and truth. However, the advance of modernity—science, skepticism, secularization—had undermined that faith. For Nietzsche, traditional certainties could no longer hold. The death of God, then, signals the loss of an absolute foundation for morality and knowledge. <br><br>
+                    This diagnosis, far from being a triumph, opens a void: without God, humanity risks falling into nihilism, the sense that nothing has meaning or value. Nietzsche’s challenge is to pass through nihilism and transform it into an opportunity to create new values.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Voluntad de poder" data-en="Will to Power">Voluntad de poder</h2>
+        <p data-es="Uno de sus conceptos más complejos es la 'voluntad de poder' (Wille zur Macht). A menudo malinterpretado como simple deseo de dominio, en Nietzsche es algo más profundo: la tendencia vital que impulsa a los seres a afirmarse, expandirse, superar obstáculos. No es únicamente ambición política, sino una fuerza creativa presente en la vida misma. La voluntad de poder se expresa en la capacidad de transformar, inventar y dar forma a la existencia."
+           data-en="One of his most complex concepts is the 'will to power' (Wille zur Macht). Often misunderstood as mere desire for domination, in Nietzsche it is something deeper: the vital tendency that drives beings to affirm themselves, expand, and overcome obstacles. It is not only political ambition but also a creative force inherent in life itself. The will to power is expressed in the capacity to transform, invent, and shape existence.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="El eterno retorno" data-en="The Eternal Return">El eterno retorno</h2>
+        <p data-es="Nietzsche plantea una provocación existencial: ¿qué pasaría si tuvieras que vivir tu vida una y otra vez, eternamente, sin cambiar nada? Este es el experimento del “eterno retorno”. No se trata de una teoría científica, sino de un desafío ético: aceptar la vida en su totalidad, con alegrías y sufrimientos, sin arrepentimiento. Quien puede decir “sí” a esta idea es capaz de afirmar la vida en toda su intensidad."
+           data-en="Nietzsche poses an existential provocation: what if you had to live your life over and over, eternally, without changing anything? This is the idea of the eternal return. It is not a scientific theory but an ethical challenge: to accept life in its entirety, with joys and sufferings, without regret. Whoever can say “yes” to this idea is capable of affirming life in its fullest intensity.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Crítica a la moral tradicional" 
+            data-en="Critique of Traditional Morality">Crítica a la moral tradicional</h2>
+        <p data-es="Nietzsche distingue entre la 'moral de señores'y la 'moral de esclavos'. La primera valora la fuerza, la creatividad, la afirmación de la vida; la segunda, en cambio, surge del resentimiento de los débiles y convierte la humildad, la obediencia y la negación de los instintos en virtudes. Según Nietzsche, el cristianismo y gran parte de la filosofía occidental consolidaron una moral de esclavos que reprime la vitalidad humana. <br><br>
+                    Su crítica no significa que debamos imponer brutalidad, sino que debemos reconocer cómo los sistemas morales se construyen históricamente y cómo pueden sofocar el potencial creador del individuo."
+           data-en="Nietzsche distinguishes between 'master morality' and 'slave morality'. The former values strength, creativity, and affirmation of life; the latter arises from the resentment of the weak, turning humility, obedience, and denial of instincts into virtues. According to Nietzsche, Christianity and much of Western philosophy consolidated a slave morality that represses human vitality. <br><br>
+                    His critique does not mean that we must impose brutality, but that we should recognize how moral systems are historically constructed and how they can stifle the creative potential of the individual.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="El superhombre (Übermensch)" 
+            data-en="The Overman (Übermensch)">
+            El superhombre (Übermensch)
+        </h2>
+        <p data-es="Ante la crisis de valores, Nietzsche introduce la idea del Übermensch, traducido como 'superhombre' o 'transhumano'. No es un ser biológicamente superior ni un dictador, sino un ideal de quien crea sus propios valores y vive más allá de la moral tradicional. El Übermensch encarna la capacidad de transformar la existencia en obra de arte, afirmando la vida sin necesidad de verdades absolutas."
+           data-en="In the face of the crisis of values, Nietzsche introduces the idea of the Übermensch, translated as 'overman' or 'superhuman.' This is not a biologically superior being or a dictator, but an ideal of someone who creates their own values and lives beyond traditional morality. The Übermensch embodies the ability to transform existence into a work of art, affirming life without the need for absolute truths.">
+           
+        </p>
+         <!-- Imagen simbólica -->
+        <figure>
+          <img src="../img/ubermensch.jpg" alt="Concepto del superhombre de Nietzsche">
+          <figcaption data-es="Representación artística del Übermensch"
+                      data-en="Artistic representation of the Übermensch"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="Estilo y método: genealogía" 
+            data-en="Style and Method: Genealogy">
+            Estilo y método: genealogía
+        </h2>
+        <p data-es="Nietzsche utiliza lo que él mismo llama 'genealogía': una forma de investigar el origen histórico de los conceptos morales. En lugar de aceptarlos como eternos, muestra cómo surgen de luchas de poder, resentimientos o intereses. Su obra La genealogía de la moral es un ejemplo de este método, revelando cómo nociones como “bueno” o “culpable” tienen raíces sociales y políticas, más que divinas o racionales."
+           data-en="Nietzsche uses what he calls 'genealogy': a way of investigating the historical origin of moral concepts. Rather than accepting them as eternal, he shows how they emerge from power struggles, resentments, and interests. His work On the Genealogy of Morality is an example of this method, revealing how notions such as “good” or “guilty” have social and political roots rather than divine or rational ones.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Relevancia actual" data-en="Current Relevance">Relevancia actual</h2>
+        <p data-es="Hoy, Nietzsche es una referencia central en debates filosóficos, culturales y políticos: <br>
+                  <ul>
+                    <li>En filosofía contemporánea, inspiró a Foucault, Derrida, Deleuze y otros pensadores que cuestionan las verdades universales.</li>
+                    <li>En psicología y cultura, su idea de los instintos y el poder simbólico influyó en Freud y en el psicoanálisis.</li>
+                    <li>En política y sociedad, su crítica al conformismo ayuda a analizar cómo se producen las normas y cómo pueden ser resistidas.</li>
+                    <li>En ética personal, invita a asumir la responsabilidad de crear sentido y vivir con autenticidad en un mundo sin certezas absolutas.</li>
+                  </ul>"
+                  
+           data-en="Today, Nietzsche is a central reference in philosophical, cultural, and political debates: <br>
+                  <ul>
+                    <li>In contemporary philosophy, he inspired Foucault, Derrida, Deleuze, and others who question universal truths.</li>
+                    <li>In psychology and culture, his ideas about instincts and symbolic power influenced Freud and psychoanalysis.</li>
+                    <li>In politics and society, his critique of conformism helps analyze how norms are produced and how they can be resisted.</li>
+                    <li>In personal ethics, he invites us to take responsibility for creating meaning and to live authentically in a world without absolute certainties.</li>
+                  </ul>">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Malinterpretaciones" data-en="Misinterpretations">Malinterpretaciones</h2>
+        <p data-es="No puede olvidarse que el pensamiento nietzscheano fue tergiversado en el siglo XX. El nazismo usó de forma distorsionada la noción de “superhombre”, aunque Nietzsche rechazaba el antisemitismo y el nacionalismo. Por eso, hoy es clave leerlo críticamente, destacando su dimensión creativa y liberadora, más que cualquier uso autoritario."
+           data-en="It should not be forgotten that Nietzsche's thought was distorted in the 20th century. The Nazis misused the notion of the Übermensch, even though Nietzsche rejected antisemitism and nationalism. For this reason, it is crucial today to read him critically, highlighting the creative and liberating dimension of his philosophy rather than any authoritarian misuse.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Conclusión" data-en="Conclusion">Conclusión</h2>
+        <p data-es="Nietzsche desafía: ¿cómo vivir sin verdades absolutas? Su respuesta no es el pesimismo, sino la valentía de inventar valores y abrazar la vida en su plenitud. En tiempos de crisis de sentido, su filosofía sigue siendo un llamado a la creatividad, la autonomía y la resistencia frente a dogmas que limitan la libertad."
+           data-en="Nietzsche challenges: how to live without absolute truths? His response is not pessimism, but the courage to invent values and embrace life in its fullness. In times of crisis of meaning, his philosophy continues to call for creativity, autonomy, and resistance against dogmas that limit freedom.">
+           
+        </p>
+        <blockquote data-es="“Dios ha muerto. Dios sigue muerto. Y nosotros lo hemos matado. ¿Cómo consolarnos, asesinos de asesinos? Lo más sagrado y poderoso que el mundo poseía se ha desangrado bajo nuestros cuchillos. ¿Quién nos lavará de esta sangre? ¿Con qué agua podremos limpiarnos?” <br>
+                              (La gaya ciencia, af. 125)”"
+                    data-en="“God is dead. God remains dead. And we have killed him. How shall we console ourselves, the murderers of all murderers? The holiest and the mightiest that the world has yet possessed has bled to death under our knives: who will wipe this blood off us? What water is there for us to clean ourselves?” <br>
+                              (The Gay Science, af. 125)”">
+          
+        </blockquote>
+      </section>
+    </article>
+  </main>
+
+  <!-- Sidebar -->
+<aside class="sidebar" aria-label="Barra lateral con navegación y extras">
+
+  <!-- Reportajes -->
+  <section class="sidebar-section card reportajes">
+        <h3 data-es="Otros filósofos" data-en="Other philosophers">Otros filósofos</h3>
+        
+        <article class="author-card" data-id="beauvoir">
+          <a href="beauvoir.html" class="author-link">
+            <img src="../img/beauvoir.jpg" alt="Simone de Beauvoir">
+            <div>
+              <h4>Simone de Beauvoir</h4>
+              <p data-es="Filósofa francesa, clave en el feminismo y la reflexión sobre género y libertad."
+               data-en="French philosopher, key figure in feminism and reflections on gender and freedom."></p>
+          </div>
+        </a>
+      </article>
+
+        <article class="author-card" data-id="fanon">
+          <a href="fanon.html" class="author-link">
+            <img src="../img/fanon.jpg" alt="Frantz Fanon">
+            <div>
+              <h4>Frantz Fanon</h4>
+              <p data-es="Psiquiatra y teórico de la descolonización, analizó identidad y opresión."
+               data-en="Psychiatrist and decolonial theorist, analyzed identity and oppression."></p>
+          </div>
+        </a>
+      </article>
+
+        <article class="author-card" data-id="sen">
+          <a href="sen.html" class="author-link">
+            <img src="../img/sen.jpg" alt="Amartya Sen">
+            <div>
+              <h4>Amartya Sen</h4>
+              <p data-es="Economista y filósofo indio, defensor de la libertad y el desarrollo humano."
+               data-en="Indian economist and philosopher, advocate of freedom and human development."></p>
+          </div>
+        </a>
+      </article>
+
+      <article class="author-card" data-id="aplicada">
+          <a href="filosofia-aplicada.html" class="author-link">
+            <img src="../img/aplicada.jpg" alt="Filosofía aplicada">
+            <div>
+              <h4 data-es="Filosofía Aplicada" data-en="Applied Philosophy">Filosofía Aplicada</h4>
+              <p data-es="Exploración de cómo la filosofía se conecta con problemas prácticos y actuales."
+                data-en="Exploration of how philosophy connects with practical and current issues."></p>
+          </div>
+        </a>
+      </article>
+    </section>
+
+  <!-- Reseñas -->
+  <section class="sidebar-section card">
+    <h3 data-es="Reseñas" data-en="Reviews">Reseñas</h3>
+    <div class="review">
+      <p data-es="El enfoque de Nietzsche sigue siendo inspirador: su crítica a la moral tradicional impulsa a repensar valores y crear nuevos horizontes éticos."
+         data-en="Nietzsche’s approach remains inspiring: his critique of traditional morality pushes us to rethink values and create new ethical horizons.">
+      </p>
+    </div>
+    <div class="review">
+      <p data-es="Aunque visionario, el estilo aforístico de Nietzsche dificulta una interpretación clara; esto ha llevado a malentendidos y apropiaciones problemáticas."
+         data-en="Although visionary, Nietzsche’s aphoristic style makes interpretation difficult; this has led to misunderstandings and problematic appropriations.">
+      </p>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section class="sidebar-section card">
+    <h3 data-es="Noticias" data-en="News">Noticias</h3>
+    <article class="news">
+      <div class="thumb"><img src="/img/ai.jpg" alt="IA" /></div>
+      <p data-es="Nietzsche en debates sobre inteligencia artificial (2024): su idea de la 'voluntad de poder' se cita en discusiones sobre autonomía de las máquinas. [Fuente: The Conversation]"
+         data-en="Nietzsche in AI debates (2024): his idea of the 'will to power' is cited in discussions about machine autonomy. [Source: The Conversation]">
+      </p>
+    </article>
+    <article class="news">
+      <div class="thumb"><img src="/img/mentalhealth.jpg" alt="Salud mental" /></div>
+      <p data-es="Nietzsche y salud mental (2023): su visión del sufrimiento como motor creativo influye en terapias existenciales. [Fuente: Psychology Today]"
+         data-en="Nietzsche and mental health (2023): his view of suffering as a creative drive influences existential therapies. [Source: Psychology Today]">
+      </p>
+    </article>
+    <article class="news">
+      <div class="thumb"><img src="/img/conference.jpg" alt="Conferencia" /></div>
+      <p data-es="Relecturas posmodernas (2025): conferencias académicas retoman a Nietzsche para debatir sobre crisis de valores en tiempos de polarización. [Fuente: Journal of Philosophy of Life]"
+         data-en="Postmodern re-readings (2025): academic conferences revisit Nietzsche to debate value crises in times of polarization. [Source: Journal of Philosophy of Life]">
+      </p>
+    </article>
+  </section>
+
+
+  <!-- Opinión Personal -->
+  <section class="sidebar-section card">
+    <h3 data-es="Opinión personal" data-en="Personal opinion">Opinión personal</h3>
+
+    <article class="opinion">
+      <div class="photo"><img src="/img/autor1.jpg" alt="Autor 1"><strong>Yankarlo Morán</strong></div>
+      <p data-es="Para mí, Nietzsche es un recordatorio de que la autenticidad implica incomodidad: asumir que los valores heredados no siempre son válidos y que debemos atrevernos a crearlos."
+         data-en="For me, Nietzsche is a reminder that authenticity involves discomfort: acknowledging that inherited values are not always valid and that we must dare to create them.">
+      </p>
+    </article>
+
+    <article class="opinion">
+      <div class="photo"><img src="/img/autor2.jpg" alt="Autor 2"><strong>Jackeline Lucas</strong></div>
+      <p data-es="Más allá de la radicalidad de sus frases, veo a Nietzsche como alguien que nos reta a no quedarnos en la queja, sino en la construcción. Me inspira a ver la filosofía como una fuerza vital."
+         data-en="Beyond the radical nature of his phrases, I see Nietzsche as someone who challenges us not to remain in complaint, but to build. He inspires me to see philosophy as a vital force.">
+      </p>
+    </article>
+  </section>
+
+  <!-- Lecturas recomendadas -->
+      <section class="sidebar-section card">
+        <h3 data-es="Lecturas recomendadas" data-en="Recommended readings">Lecturas recomendadas</h3>
+        <ul class="sidebar-list">
+          <li><a href="https://plato.stanford.edu/entries/nietzsche/" target="_blank">Stanford Encyclopedia of Philosophy</a></li>
+          <li><a href="https://iep.utm.edu/nietzsch/" target="_blank">Internet Encyclopedia of Philosophy</a></li>
+          <li><a href="https://www.britannica.com/biography/Friedrich-Nietzsche" target="_blank">Britannica — Nietzsche</a></li>
+        </ul>
+      </section>
+  
+  <!-- Frases destacadas -->
+  <section class="sidebar-section card">
+    <h3 data-es="Frases destacadas" data-en="Key quotes">Frases destacadas</h3>
+    <ul class="quotes">
+      <li data-es="Quien tiene un porqué para vivir puede soportar casi cualquier cómo."
+          data-en="He who has a why to live can bear almost any how."></li>
+      <li data-es="Sin música, la vida sería un error."
+          data-en="Without music, life would be a mistake."></li>
+      <li data-es="El hombre es algo que debe ser superado."
+          data-en="Man is something that must be overcome."></li>
+    </ul>
+  </section>
+
+  <!-- Mini cronología -->
+  <section class="sidebar-section card">
+    <h3 data-es="Cronología" data-en="Timeline">Cronología</h3>
+    <ul class="timeline">
+      <li><strong>1844</strong> — <span data-es="Nace en Röcken, Prusia." data-en="Born in Röcken, Prussia."></span></li>
+      <li><strong>1883</strong> — <span data-es="Publica 'Así habló Zaratustra'." data-en="Publishes 'Thus Spoke Zarathustra'."></span></li>
+      <li><strong>1900</strong> — <span data-es="Muere en Weimar, Alemania." data-en="Dies in Weimar, Germany."></span></li>
+    </ul>
+  </section>
+
+  <!-- Arte relacionado -->
+  <section class="sidebar-section card">
+    <h3 data-es="Arte relacionado" data-en="Related art">Arte relacionado</h3>
+    <div class="art-gallery">
+      <figure>
+        <img src="../img/nietzsche-art1.jpg" alt="Arte 1 de Nietzsche">
+        <figcaption data-es="Ilustración inspirada en Nietzsche"
+                    data-en="Illustration inspired by Nietzsche"></figcaption>
+      </figure>
+      <figure>
+        <img src="../img/nietzsche-art2.jpg" alt="Arte 2 de Nietzsche">
+        <figcaption data-es="Portada de edición clásica"
+                    data-en="Classic edition cover"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Multimedia -->
+  <section class="sidebar-section card">
+    <h3 data-es="Multimedia" data-en="Multimedia">Multimedia</h3>
+    <ul class="multimedia">
+      <li><a href="https://www.youtube.com/watch?v=7ZiKVvsAf9c&pp=ygUdZnJpZWRyaWNoIG5pZXR6c2NoZSByYW0gdGFsa3PSBwkJsgkBhyohjO8%3D" target="_blank" rel="noopener">
+        📺 <span data-es="Video: Filosofía de la VOLUNTAD de PODER y el CRECIMIENTO" 
+                 data-en="Video: Philosophy of the WILL to POWER and GROWTH"></span>
+      </a></li>
+      <li><a href="https://www.youtube.com/watch?v=NS68l0w9W90&pp=ygUdZnJpZWRyaWNoIG5pZXR6c2NoZSByYW0gdGFsa3M%3D" target="_blank" rel="noopener">
+        📺 <span data-es="Salir del Rebaño — Genealogía de la Moral" 
+                 data-en="Leaving the Herd — Genealogy of Morality"></span>
+      </a></li>
+    </ul>
+  </section>
+
+  <!-- Sabías que -->
+  <section class="sidebar-section card">
+    <h3 data-es="¿Sabías que...?" data-en="Did you know...?">¿Sabías que...?</h3>
+    <ul class="facts">
+      <li data-es="Nietzsche compuso piezas musicales y soñaba con ser compositor." 
+          data-en="Nietzsche composed music pieces and dreamed of being a composer."></li>
+      <li data-es="Solo publicó algunos libros en vida; muchos fueron editados tras su muerte." 
+          data-en="He only published some books during his lifetime; many were edited posthumously."></li>
+      <li data-es="Su ruptura con Wagner marcó profundamente su filosofía." 
+          data-en="His break with Wagner deeply marked his philosophy."></li>
+    </ul>
+  </section>
+
+  <!-- Encuesta -->
+<section class="sidebar-section card poll">
+  <h3 data-es="Encuesta" data-en="Poll">Encuesta</h3>
+  <p data-es="¿Qué concepto de Nietzsche te resulta más interesante?" 
+     data-en="Which Nietzschean concept do you find most interesting?">
+     ¿Qué concepto de Nietzsche te resulta más interesante?
+  </p>
+
+  <form id="poll-form">
+    <label>
+      <input type="radio" name="vote" value="dios">
+      <span data-es="La muerte de Dios" data-en="The Death of God">La muerte de Dios</span>
+    </label><br>
+    <label>
+      <input type="radio" name="vote" value="poder">
+      <span data-es="Voluntad de poder" data-en="Will to Power">Voluntad de poder</span>
+    </label><br>
+    <label>
+      <input type="radio" name="vote" value="eterno">
+      <span data-es="Eterno retorno" data-en="Eternal Return">Eterno retorno</span>
+    </label><br>
+    <label>
+      <input type="radio" name="vote" value="ubermensch">
+      <span data-es="Übermensch" data-en="Übermensch">Übermensch</span>
+    </label><br>
+
+    <button type="submit" class="poll-btn" 
+      data-es="Votar" data-en="Vote">Votar</button>
+  </form>
+
+  <div id="poll-results" style="display:none;"></div>
+</section>
+
+
+  </aside>
+</div>
+
+    <!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <!-- Logo y descripción -->
+    <div class="footer-col">
+      <img src="/img/logo.png" alt="Logo FiloLing" class="logo">
+      <p data-es="Un espacio para explorar filosofía y lenguaje desde nuevas perspectivas." 
+         data-en="A space to explore philosophy and language from new perspectives.">
+         Un espacio para explorar filosofía y lenguaje desde nuevas perspectivas.
+      </p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div class="footer-col">
+      <h4 data-es="Enlaces rápidos" data-en="Quick Links">Enlaces rápidos</h4>
+      <ul>
+        <li><a href="/index.html" data-es="Home" data-en="Home">Home</a></li>
+        <li><a href="/index.html#reportajes" data-es="Reportajes" data-en="Reports">Reportajes</a></li>
+        <li><a href="/index.html#noticias" data-es="Noticias" data-en="News">Noticias</a></li>
+        <li><a href="/index.html#entrevistas" data-es="Entrevistas" data-en="Interviews">Entrevistas</a></li>
+        <li><a href="/index.html#resenas" data-es="Reseñas" data-en="Reviews">Reseñas</a></li>
+        <li><a href="/index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-col">
+      <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+      <p>Email: <a href="https://workspace.google.com/intl/es-419/products/gmail/">equipo@filoling.com</a></p>
+      <p data-es="Villa Nueva, Guatemala, 2025" data-en="Villa Nueva, Guatemala, 2025">Villa Nueva, Guatemala, 2025</p>
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <div class="footer-bottom">
+    <p data-es="© FiloLing — Un espacio para pensar juntos — Yankarlo Morán y Jackeline Lucas" 
+       data-en="© FiloLing — A space to think together — Yankarlo Moran and Jackeline Lucas">
+       © FiloLing — Un espacio para pensar juntos — Yankarlo Morán
+    </p>
+    <p data-es="Hecho con HTML + CSS + JS" 
+       data-en="Made with HTML + CSS + JS">
+       Hecho con HTML + CSS + JS
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

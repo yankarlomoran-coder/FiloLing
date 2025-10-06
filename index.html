@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="es" data-current="home">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home | FiloLing</title>
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <meta name="description" content="Reportaje extenso sobre Frantz Fanon — filosofía, colonialismo y relevancia actual." />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../index.css">
+  <script src="../app.js" defer></script>
+  <script src="../sidebar.js" defer></script>
+</head>
+<body>
+  <div class="site">
+
+    <!-- === Buscador + subtítulo === -->
+    <div class="search-container">
+      <p class="dynamic-subtitle"
+         data-es="“Quien se atreve a pensar, se arriesga a cambiar.”"
+         data-en="“Who dares to think, risks being changed.”">
+         “Quien se atreve a pensar, se arriesga a cambiar.”
+      </p>
+      <div class="search-box">
+        <div id="search-results" class="search-results"></div>
+        <input type="text" id="search-input" placeholder="Buscar..."
+               data-es="Buscar..." data-en="Search...">
+        <button type="submit" class="search-btn" aria-label="Buscar">
+          <img src="/img/search.svg" alt="Buscar">
+        </button>
+      </div>
+    </div>
+
+    <!-- === HEADER === -->
+    <header class="header">
+      <a href="/index.html" class="brand">
+        <img src="/img/logo.png" alt="Logo FiloLing" class="logo">
+        <div>
+          <h1>FiloLing</h1>
+          <p data-es="Un espacio para pensar juntos."
+             data-en="A space to think together.">Un espacio para pensar juntos.</p>
+        </div>
+      </a>
+
+
+  <nav class="nav">
+        <div class="dropdown">
+          <a href="/index.html#reportajes" data-es="Reportajes" data-en="Reports">Reportajes</a>
+          <div class="dropdown-content">
+            <a href="/reportajes/nietzsche.html">Friedrich Nietzsche</a>
+            <a href="/reportajes/beauvoir.html">Simone de Beauvoir</a>
+            <a href="/reportajes/fanon.html">Frantz Fanon</a>
+            <a href="/reportajes/sen.html">Amartya Sen</a>
+            <a href="/reportajes/filosofia-aplicada.html" data-es="Filosofía Aplicada" data-en="Applied Philosophy">Filosofía Aplicada</a>
+          </div>
+        </div>
+        <a href="/index.html#noticias" data-es="Noticias" data-en="News">Noticias</a>
+        <a href="/index.html#entrevistas" data-es="Entrevistas" data-en="Interviews">Entrevistas</a>
+        <a href="/index.html#columnas" data-es="Columnas" data-en="Columns">Columnas</a>
+        <a href="/index.html#resenas" data-es="Reseñas" data-en="Reviews">Reseñas</a>
+        <a href="/index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a>
+      </nav>
+
+      <div class="header-extras">
+        <div class="lang">
+          <button class="lang-btn" data-lang="es" aria-pressed="true">
+            <img src="/img/flag-es.svg" alt="Español"> ES
+          </button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">
+            <img src="/img/flag-us.svg" alt="English"> EN
+          </button>
+        </div>
+        <button class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main role="main">
+
+  <!-- === Hero principal === -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-content">
+    <h1 class="site-name">Filoling</h1>
+
+    <!-- Eslogan -->
+    <p data-es="Pensar es romper el silencio que protege la injusticia"
+       data-en="Thinking is breaking the silence that protects injustice.">
+       Pensar es romper el silencio que protege la injusticia
+    </p>
+
+    <!-- Cita dinámica -->
+    <blockquote class="hero-quote" id="hero-quote">
+      «La filosofía es el arte de vivir» — Platón
+    </blockquote>
+  </div>
+</section>
+
+
+
+
+  <!-- === Artículos destacados === -->
+<section class="featured-posts" aria-labelledby="featured-title">
+  <h3 id="featured-title" data-es="Artículos destacados" data-en="Featured Articles">Artículos destacados</h3>
+  <div class="featured-grid">
+
+    <a href="reportajes/nietzsche.html" class="featured-card">
+      <h4>Friedrich Nietzsche</h4>
+      <p data-es="Crítica a la moral tradicional y genealogía de valores."
+         data-en="Critique of traditional morality and genealogy of values."></p>
+      <blockquote data-es="“Dios ha muerto. Y nosotros lo hemos matado.”"
+                  data-en="“God is dead. And we have killed him.”">
+        “Dios ha muerto. Y nosotros lo hemos matado.”
+      </blockquote>
+    </a>
+
+    <a href="reportajes/beauvoir.html" class="featured-card">
+      <h4>Simone de Beauvoir</h4>
+      <p data-es="Género, libertad y la construcción social del ser."
+         data-en="Gender, freedom, and the social construction of being."></p>
+      <blockquote data-es="“No se nace mujer: se llega a serlo.”"
+                  data-en="“One is not born, but rather becomes, a woman.”">
+        “No se nace mujer: se llega a serlo.”
+      </blockquote>
+    </a>
+
+    <a href="reportajes/fanon.html" class="featured-card">
+      <h4>Frantz Fanon</h4>
+      <p data-es="Descolonización cultural y lucha antirracista."
+         data-en="Cultural decolonization and anti-racist struggle."></p>
+      <blockquote data-es="“El colonialismo no se desmantela con la amabilidad.”"
+                  data-en="“Colonialism is not dismantled with gentleness.”">
+        “El colonialismo no se desmantela con la amabilidad.”
+      </blockquote>
+    </a>
+
+    <a href="reportajes/sen.html" class="featured-card">
+      <h4>Amartya Sen</h4>
+      <p data-es="Capacidades, justicia y desarrollo humano."
+         data-en="Capabilities, justice, and human development."></p>
+      <blockquote data-es="“La justicia se mide en lo que las personas pueden hacer y ser.”"
+                  data-en="“Justice is measured in what people are able to do and to be.”">
+        “La justicia se mide en lo que las personas pueden hacer y ser.”
+      </blockquote>
+    </a>
+
+  </div>
+</section>
+
+
+
+  <!-- === Reportajes === -->
+  <section class="home-section" id="reportajes">
+  <h3 data-es="Reportajes" data-en="Reports">Reportajes</h3>
+  <p class="meta" data-es="Artículos largos y análisis críticos" data-en="Long articles and critical analysis"></p>
+  <div class="reportajes-list">
+    
+    <!-- Nietzsche -->
+    <a href="reportajes/nietzsche.html" class="philo-card">
+      <div class="philo-image">
+        <img src="/img/nietzsche-portrait.jpg" alt="Friedrich Nietzsche">
+      </div>
+      <div class="philo-header">
+        <h4 data-es="Friedrich Nietzsche" data-en="Friedrich Nietzsche">Friedrich Nietzsche</h4>
+        <span class="life" data-es="1844–1900 · Filósofo alemán" data-en="1844–1900 · German philosopher">1844–1900 · Filósofo alemán</span>
+      </div>
+      <ul class="ideas">
+        <li data-es="Crítica a la moral tradicional" data-en="Critique of traditional morality"></li>
+        <li data-es="Voluntad de poder" data-en="Will to power"></li>
+        <li data-es="“Muerte de Dios”" data-en="“Death of God”"></li>
+        <li data-es="Eterno retorno" data-en="Eternal recurrence"></li>
+        <li data-es="Individuo creador de valores" data-en="Individual as creator of values"></li>
+      </ul>
+      <blockquote data-es="“Dios ha muerto. Dios sigue muerto. Y nosotros lo hemos matado.”" 
+                  data-en="“God is dead. God remains dead. And we have killed him.”">
+        “Dios ha muerto. Dios sigue muerto. Y nosotros lo hemos matado.”
+      </blockquote>
+    </a>
+
+    <!-- Beauvoir -->
+    <a href="reportajes/beauvoir.html" class="philo-card">
+      <div class="philo-image">
+        <img src="/img/beauvoir.jpg" alt="Simone de Beauvoir">
+      </div>
+      <div class="philo-header">
+        <h4 data-es="Simone de Beauvoir" data-en="Simone de Beauvoir">Simone de Beauvoir</h4>
+        <span class="life" data-es="1908–1986 · Filósofa y escritora francesa" 
+              data-en="1908–1986 · French philosopher and writer">1908–1986 · Filósofa y escritora francesa</span>
+      </div>
+      <ul class="ideas">
+        <li data-es="“No se nace mujer: se llega a serlo”" data-en="“One is not born, but rather becomes, a woman”"></li>
+        <li data-es="Género como construcción social" data-en="Gender as social construction"></li>
+        <li data-es="Existencialismo aplicado a opresión y libertad" data-en="Existentialism applied to oppression and freedom"></li>
+        <li data-es="Autonomía y responsabilidad" data-en="Autonomy and responsibility"></li>
+        <li data-es="La opresión se reproduce socialmente" data-en="Oppression is socially reproduced"></li>
+      </ul>
+      <blockquote data-es="“No se nace mujer: se llega a serlo.”" 
+                  data-en="“One is not born, but rather becomes, a woman.”">
+        “No se nace mujer: se llega a serlo.”
+      </blockquote>
+    </a>
+
+        <!-- Frantz Fanon -->
+    <a href="reportajes/fanon.html" class="philo-card">
+      <div class="philo-image">
+        <img src="/img/fanon.jpg" alt="Frantz Fanon">
+      </div>
+      <div class="philo-header">
+        <h4 data-es="Frantz Fanon" data-en="Frantz Fanon">Frantz Fanon</h4>
+        <span class="life" data-es="1925–1961 · Psiquiatra y teórico anticolonial" 
+              data-en="1925–1961 · Psychiatrist and anticolonial theorist">1925–1961 · Psiquiatra y teórico anticolonial</span>
+      </div>
+      <ul class="ideas">
+        <li data-es="Colonización como proceso psicopolítico" data-en="Colonization as a psychopolitical process"></li>
+        <li data-es="Violencia en lucha anticolonial" data-en="Violence in anticolonial struggle"></li>
+        <li data-es="Identidad y alienación" data-en="Identity and alienation"></li>
+        <li data-es="Descolonización cultural" data-en="Cultural decolonization"></li>
+        <li data-es="Crítica al paternalismo" data-en="Critique of paternalism"></li>
+      </ul>
+      <blockquote data-es="“Cada generación debe, en relativa oscuridad, descubrir su misión y cumplirla.”" 
+                  data-en="“Each generation must, in relative obscurity, discover its mission, fulfill it, or betray it.”">
+        “Cada generación debe, en relativa oscuridad, descubrir su misión y cumplirla.”
+      </blockquote>
+    </a>
+
+    <!-- Amartya Sen -->
+    <a href="reportajes/sen.html" class="philo-card">
+      <div class="philo-image">
+        <img src="/img/sen.jpg" alt="Amartya Sen">
+      </div>
+      <div class="philo-header">
+        <h4 data-es="Amartya Sen" data-en="Amartya Sen">Amartya Sen</h4>
+        <span class="life" data-es="1933– · Economista y filósofo indio" 
+              data-en="1933– · Indian economist and philosopher">1933– · Economista y filósofo indio</span>
+      </div>
+      <ul class="ideas">
+        <li data-es="Enfoque de las capacidades" data-en="Capabilities approach"></li>
+        <li data-es="Derechos ligados a oportunidades" data-en="Rights linked to opportunities"></li>
+        <li data-es="Crítica al utilitarismo" data-en="Critique of utilitarianism"></li>
+        <li data-es="Democracia y debate público" data-en="Democracy and public debate"></li>
+        <li data-es="Ética y economía interconectadas" data-en="Ethics and economics interconnected"></li>
+      </ul>
+      <blockquote data-es="“La pobreza no es sólo la falta de ingresos; es la falta de capacidades básicas.”" 
+                  data-en="“Poverty is not just a lack of income; it is a lack of basic capabilities.”">
+        “La pobreza no es sólo la falta de ingresos; es la falta de capacidades básicas.”
+      </blockquote>
+    </a>
+
+    <!-- Filosofía Aplicada -->
+    <a href="reportajes/filosofia-aplicada.html" class="philo-card">
+      <div class="philo-image">
+        <img src="/img/aplicada.jpg" alt="Filosofía Aplicada">
+      </div>
+      <div class="philo-header">
+        <h4 data-es="Filosofía Aplicada" data-en="Applied Philosophy">Filosofía Aplicada</h4>
+        <span class="life" data-es="Temas contemporáneos" data-en="Contemporary topics">Temas contemporáneos</span>
+      </div>
+      <ul class="ideas">
+        <li data-es="Felicidad y bienestar social" data-en="Happiness and social well-being"></li>
+        <li data-es="Justicia y derechos humanos" data-en="Justice and human rights"></li>
+        <li data-es="Gobierno y legitimidad" data-en="Government and legitimacy"></li>
+        <li data-es="Movimientos sociales y protestas" data-en="Social movements and protests"></li>
+        <li data-es="Paz y convivencia democrática" data-en="Peace and democratic coexistence"></li>
+      </ul>
+      <blockquote data-es="“La filosofía es una herramienta viva para transformar la realidad social.”" 
+                  data-en="“Philosophy is a living tool to transform social reality.”">
+        “La filosofía es una herramienta viva para transformar la realidad social.”
+      </blockquote>
+    </a>
+
+  </div>
+</section>
+
+  <!-- === Noticias === -->
+  <section class="home-section" id="noticias">
+    <h3 data-es="Noticias / Actualidad" data-en="News / Current Affairs">Noticias / Actualidad</h3>
+
+    <div class="news-list">
+
+      <!-- Noticia 1-->
+      <a href="https://www.reuters.com/sustainability/cop/cop30-urged-link-climate-justice-with-reparations-historical-crimes-2025-09-26/" 
+   class="news-card" target="_blank" rel="noopener">
+  <div class="news-image">
+    <img src="/img/climate-justice.jpg" 
+         alt="COP30 y justicia climática">
+  </div>
+  <div class="news-content">
+    <h4 data-es="COP30 impulsado para vincular justicia climática y reparaciones históricas"
+        data-en="COP30 urged to link climate justice with reparations for historical crimes">
+      COP30 impulsado para vincular justicia climática y reparaciones históricas
+    </h4>
+    <p data-es="Organizaciones piden que la cumbre reconozca las raíces coloniales del cambio climático y formule reparaciones." 
+       data-en="Organizations urge the summit to acknowledge colonial roots of climate change and propose reparations.">
+      Organizaciones piden que la cumbre reconozca las raíces coloniales del cambio climático y formule reparaciones.
+    </p>
+  </div>
+</a>
+
+      <!-- Noticia 2 -->
+      <a href="https://apnews.com/article/6d50a43408a5ccd50654fa7dd99f96e8" 
+   class="news-card" target="_blank" rel="noopener">
+  <div class="news-image">
+    <img src="/img/jail-journalist.jpg" 
+         alt="Periodista encarcelado Bielorrusia">
+  </div>
+  <div class="news-content">
+    <h4 data-es="Periodista bielorruso condenado por criticar al gobierno"
+        data-en="Belarus journalist jailed for criticizing authoritarian president">
+      Periodista bielorruso condenado por criticar al gobierno
+    </h4>
+    <p data-es="Volha Radzivonava recibió 4 años de prisión por informar sobre abusos en el poder en Bielorrusia." 
+       data-en="Volha Radzivonava was sentenced to 4 years for reporting on government abuses in Belarus.">
+      Volha Radzivonava recibió 4 años de prisión por informar sobre abusos en el poder en Bielorrusia.
+    </p>
+  </div>
+</a>
+
+      <!-- Noticia 3 -->
+      <a href="https://www.lemonde.fr/en/france/article/2025/09/27/france-has-been-dropping-out-of-democracy-since-2017-warns-an-ngo-report_6745803_7.html"
+   class="news-card" target="_blank" rel="noopener">
+  <div class="news-image">
+    <img src="/img/france-democracy.jpg" alt="Caída de democracia en Francia">
+  </div>
+  <div class="news-content">
+    <h4 data-es="Francia advierte retroceso democrático desde 2017, según ONG"
+        data-en="France warned of democratic backsliding since 2017, says NGO report">
+      Francia advierte retroceso democrático desde 2017, según ONG
+    </h4>
+    <p data-es="Un informe denuncia que leyes recientes en Francia han limitado libertades ciudadanas, disuelto asociaciones y reprimido protestas."
+       data-en="A report says recent laws in France have limited civil liberties, dissolved associations and cracked down on protests.">
+      Un informe denuncia que leyes recientes en Francia han limitado libertades ciudadanas, disuelto asociaciones y reprimido protestas.
+    </p>
+  </div>
+</a>
+
+      <!-- Noticia 4 -->
+      <a href="https://news.un.org/es/story/2025/08/1540359" 
+   class="news-card" target="_blank" rel="noopener">
+  <div class="news-image">
+    <img src="/img/gaza-hospital-attack.jpg" alt="Ataque al hospital Nasser en Gaza">
+  </div>
+  <div class="news-content">
+    <h4 data-es="La ONU condena ataque mortal al hospital Nasser en Gaza"
+        data-en="UN condemns deadly attack on Nasser Hospital in Gaza">
+      La ONU condena ataque mortal al hospital Nasser en Gaza
+    </h4>
+    <p data-es="El Secretario General de la ONU exigió una investigación imparcial tras el ataque israelí al hospital Nasser, que dejó al menos 20 muertos, incluidos cinco periodistas y personal médico." 
+       data-en="The UN Secretary-General called for an impartial investigation after the Israeli attack on Nasser Hospital, which left at least 20 dead, including five journalists and medical staff.">
+      El Secretario General de la ONU exigió una investigación imparcial tras el ataque israelí al hospital Nasser, que dejó al menos 20 muertos, incluidos cinco periodistas y personal médico.
+    </p>
+  </div>
+</a>
+
+      <!--Noticia 5-->
+      <a href="https://www.latimes.com/espanol/eeuu/articulo/2025-09-02/trump-dice-que-ordenara-intervencion-federal-en-chicago-y-baltimore-pese-a-oposicion-local" class="news-card" target="_blank" rel="noopener">
+  <div class="news-image">
+    <img src="/img/trump.jpg"
+         alt="Chicago mayor threatens action against interference">
+  </div>
+  <div class="news-content">
+    <h4 data-es="Trump pide tropas en Chicago; alcalde responde con advertencia"
+        data-en="Trump urges troops to Chicago; mayor responds with warning">
+      Trump pide tropas en Chicago; alcalde responde con advertencia
+    </h4>
+    <p data-es="La propuesta del presidente sobre desplegar fuerzas en la ciudad genera rechazo entre líderes locales por su posible impacto en derechos civiles."
+       data-en="The president’s proposal to deploy forces in the city draws backlash from local leaders over potential impact on civil rights.">
+      La propuesta del presidente sobre desplegar fuerzas en la ciudad genera rechazo entre líderes locales por su posible impacto en derechos civiles.
+    </p>
+  </div>
+</a>
+
+      <!--Noticia 6-->
+      <a href="https://www.reuters.com/world/asia-pacific/how-gen-z-gender-divide-is-reshaping-democracy-2025-05-29/" class="news-card" target="_blank" rel="noopener">
+  <div class="news-image">
+    <img src="/img/genz.jpg"
+         alt="Gen Z gender divide in democratic trends">
+  </div>
+  <div class="news-content">
+    <h4 data-es="Cómo la brecha de género en la generación Z está moldeando la democracia"
+        data-en="How the Gen Z gender divide is reshaping democracy">
+      Cómo la brecha de género en la generación Z está moldeando la democracia
+    </h4>
+    <p data-es="Estudios muestran que jóvenes varones tienden a inclinarse hacia políticas de derecha, mientras mujeres promueven igualdad, polarizando discursos políticos."
+       data-en="Studies show young men tend to lean toward right-wing policies, while women push for equality, polarizing political discourse.">
+      Estudios muestran que jóvenes varones tienden a inclinarse hacia políticas de derecha, mientras mujeres promueven igualdad, polarizando discursos políticos.
+    </p>
+  </div>
+</a>
+
+      <!--Noticia 7-->
+      <a href="https://www.theguardian.com/world/2025/oct/04/palestine-action-protest-police-arrests-london-demo" target="_blank" rel="noopener" class="news-card">
+  <div class="news-image">
+    <img src="/img/london-protest.jpg" alt="Protesta en Londres por Palestina">
+  </div>
+  <div class="news-content">
+    <h4 data-es="Arrestos en protesta por Palestina en Londres" data-en="Arrests at Palestine protest in London"></h4>
+    <p data-es="Más de 100 personas fueron arrestadas durante una manifestación en Trafalgar Square contra la designación de Palestine Action como organización terrorista." 
+       data-en="Over 100 people were arrested during a protest in Trafalgar Square against the designation of Palestine Action as a terrorist organization."></p>
+  </div>
+</a>
+
+      <!--Noticia 8-->
+      <a href="https://www.theguardian.com/world/2025/sep/29/madagascars-president-dissolves-government-amid-youth-led-protests" target="_blank" rel="noopener" class="news-card">
+  <div class="news-image">
+    <img src="/img/madagascar-protest.jpg" alt="Protestas juveniles en Madagascar">
+  </div>
+  <div class="news-content">
+    <h4 data-es="Presidente de Madagascar disuelve el gobierno tras protestas juveniles" 
+        data-en="Madagascar president dissolves government after youth protests"></h4>
+    <p data-es="El presidente de Madagascar disolvió el gobierno en medio de manifestaciones lideradas por jóvenes que exigían mejoras en servicios públicos y rendición de cuentas." 
+       data-en="Madagascar’s president dissolved the government amid youth-led protests demanding improved public services and accountability."></p>
+  </div>
+</a>
+</div>
+  </section>
+
+
+    <!-- === Entrevistas === -->
+<section class="home-section" id="entrevistas">
+  <h3 data-es="Entrevistas" data-en="Interviews">Entrevistas</h3>
+  <p data-es="Conversaciones con diferentes voces sobre filosofía y sociedad."
+     data-en="Conversations with different voices on philosophy and society."></p>
+
+  <div class="interview-card" onclick="this.classList.toggle('open')">
+    <div class="interview-summary">
+      <img src="img/roberto.jpg" alt="Roberto Castañeda" class="interview-photo">
+      <div>
+        <h4 data-es="Roberto Castañeda" data-en="Roberto Castañeda">Roberto Castañeda</h4>
+        <p data-es="6 preguntas sobre filosofía y sociedad"
+           data-en="6 questions on philosophy and society"></p>
+      </div>
+      <button class="toggle-btn" type="button">
+        <img src="img/plus.svg" alt="Abrir">
+      </button>
+    </div>
+
+    <!-- Roberto-->
+    <div class="interview-details">
+      <ul>
+        <li>
+          <strong data-es="¿El ser humano es naturalmente bueno o malo? ¿O depende de las condiciones sociales?"
+                  data-en="Is human nature inherently good or bad? Or does it depend on social conditions?"></strong>
+          <p data-es="Yo creo que el ser humano no nace ni completamente bueno ni completamente malo. Tiene potencial para ambos extremos. Lo que lo orienta hacia un lado u otro son las condiciones sociales, la educación, la cultura y las experiencias de vida."
+             data-en="I believe humans are not born entirely good or entirely bad. They have the potential for both extremes. What guides them one way or the other are social conditions, education, culture, and life experiences."></p>
+        </li>
+
+        <li>
+          <strong data-es="¿Qué relación existe entre poder y conocimiento?"
+                  data-en="What relationship exists between power and knowledge?"></strong>
+          <p data-es="El poder y el conocimiento están íntimamente ligados. Quien posee conocimiento tiene más posibilidades de ejercer poder, ya que puede influir en decisiones, controlar información y generar cambios."
+             data-en="Power and knowledge are deeply connected. Whoever holds knowledge has greater chances to exercise power, as they can influence decisions, control information, and generate change."></p>
+        </li>
+
+        <li>
+          <strong data-es="¿Se puede hablar de paz verdadera sin justicia social?"
+                  data-en="Can we speak of true peace without social justice?"></strong>
+          <p data-es="No. La paz sin justicia social es solo una apariencia, una calma superficial que tarde o temprano se rompe. La verdadera paz requiere igualdad de oportunidades, acceso a derechos básicos y un trato justo para todos."
+             data-en="No. Peace without social justice is only an appearance, a superficial calm that eventually breaks. True peace requires equal opportunities, access to basic rights, and fair treatment for all."></p>
+        </li>
+
+        <li>
+          <strong data-es="¿Cuáles son los límites de la libertad de expresión?"
+                  data-en="What are the limits of freedom of expression?"></strong>
+          <p data-es="La libertad de expresión es fundamental, pero no puede ser absoluta. Su límite está en el daño que puede causar a otros."
+             data-en="Freedom of expression is fundamental, but it cannot be absolute. Its limit lies in the harm it can cause to others."></p>
+        </li>
+
+        <li>
+          <strong data-es="¿Cómo influyen las estructuras económicas en la moral y en la ética de las personas?"
+                  data-en="How do economic structures influence people's morals and ethics?"></strong>
+          <p data-es="Las estructuras económicas influyen muchísimo en cómo pensamos y actuamos. En sistemas donde predomina la desigualdad, muchas veces las personas justifican conductas inmorales para sobrevivir o para mantener privilegios."
+             data-en="Economic structures greatly influence how we think and act. In systems where inequality prevails, people often justify immoral behavior to survive or to maintain privileges."></p>
+        </li>
+
+        <li>
+          <strong data-es="¿Qué valor tienen las protestas y movimientos sociales en la construcción de una democracia?"
+                  data-en="What value do protests and social movements have in building a democracy?"></strong>
+          <p data-es="Las protestas y movimientos sociales son esenciales. Son la voz de quienes no son escuchados en los espacios de poder. Gracias a ellos se han logrado derechos y transformaciones históricas."
+             data-en="Protests and social movements are essential. They are the voice of those unheard in spaces of power. Thanks to them, rights and historic transformations have been achieved."></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Marllory-->
+  <div class="interview-card" onclick="this.classList.toggle('open')">
+  <div class="interview-summary">
+    <img src="img/marllory.jpg" alt="Marllory Morales" class="interview-photo">
+    <div>
+      <h4 data-es="Marllory Morales" data-en="Marllory Morales">Marllory Morales</h4>
+      <p data-es="6 preguntas sobre filosofía y sociedad"
+         data-en="6 questions on philosophy and society"></p>
+    </div>
+    <button class="toggle-btn" type="button">
+      <img src="img/plus.svg" alt="Abrir">
+    </button>
+  </div>
+
+  <div class="interview-details">
+    <ul>
+      <li>
+        <strong data-es="¿El ser humano es naturalmente bueno o malo? ¿O depende de las condiciones sociales?"
+                data-en="Is human nature inherently good or bad? Or does it depend on social conditions?"></strong>
+        <p data-es="Yo creo que no nacemos ni buenos ni malos, sino que depende mucho de cómo crecemos y las cosas que nos rodean. Las condiciones sociales, la familia, la educación y las oportunidades influyen un montón en cómo actuamos."
+           data-en="I believe we are not born good or bad, but it depends a lot on how we grow up and the things around us. Social conditions, family, education, and opportunities strongly influence how we act."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué relación existe entre poder y conocimiento?"
+                data-en="What relationship exists between power and knowledge?"></strong>
+        <p data-es="El conocimiento da poder, porque mientras más sabes, más difícil es que alguien te engañe o te manipule. Pero también el poder sin conocimiento puede ser peligroso, porque alguien con poder pero sin sabiduría puede tomar malas decisiones."
+           data-en="Knowledge gives power, because the more you know, the harder it is for someone to deceive or manipulate you. But power without knowledge can be dangerous, since someone with power but no wisdom can make poor decisions."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Se puede hablar de paz verdadera sin justicia social?"
+                data-en="Can we speak of true peace without social justice?"></strong>
+        <p data-es="La verdad no. Si hay desigualdad y la gente no tiene lo básico para vivir bien, no puede haber una paz real. Sería como una 'paz' falsa, donde unos viven bien y otros siguen sufriendo."
+           data-en="Honestly, no. If there is inequality and people lack the basics to live well, there cannot be real peace. It would be a 'false' peace, where some live well while others keep suffering."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cuáles son los límites de la libertad de expresión?"
+                data-en="What are the limits of freedom of expression?"></strong>
+        <p data-es="Pienso que debería haber libertad para opinar, pero sin dañar a otros. El límite está cuando tus palabras humillan, discriminan o incitan a la violencia. Ahí ya no es libertad, es lastimar."
+           data-en="I think there should be freedom to express opinions, but without harming others. The limit is when your words humiliate, discriminate, or incite violence. At that point, it's no longer freedom, it's harm."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cómo influyen las estructuras económicas en la moral y en la ética de las personas?"
+                data-en="How do economic structures influence people's morals and ethics?"></strong>
+        <p data-es="Muchísimo. Si alguien vive en pobreza extrema, a veces puede verse obligado a hacer cosas que en otra situación no haría, como robar o trabajar en algo injusto. O sea, las condiciones económicas sí cambian cómo las personas actúan y lo que consideran correcto o no."
+           data-en="A lot. If someone lives in extreme poverty, sometimes they may be forced to do things they wouldn’t otherwise, like stealing or working in something unfair. Economic conditions really change how people act and what they consider right or wrong."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué valor tienen las protestas y movimientos sociales en la construcción de una democracia?"
+                data-en="What value do protests and social movements have in building a democracy?"></strong>
+        <p data-es="Son súper importantes porque es la forma en la que la gente puede hacerse escuchar. Muchas veces los cambios grandes han nacido de protestas y movimientos. Es como recordarle al gobierno que el poder no es solo de ellos, sino de todos."
+           data-en="They are super important because they are how people can make their voices heard. Many big changes have started from protests and movements. It’s like reminding the government that power doesn’t only belong to them, but to everyone."></p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!--Diana-->
+  <div class="interview-card" onclick="this.classList.toggle('open')">
+  <div class="interview-summary">
+    <img src="img/diana.jpg" alt="Diana Gonzáles" class="interview-photo">
+    <div>
+      <h4 data-es="Diana Gonzáles" data-en="Diana Gonzáles">Diana Gonzáles</h4>
+      <p data-es="6 preguntas sobre filosofía y sociedad"
+         data-en="6 questions on philosophy and society"></p>
+    </div>
+    <button class="toggle-btn" type="button">
+      <img src="img/plus.svg" alt="Abrir">
+    </button>
+  </div>
+
+  <div class="interview-details">
+    <ul>
+      <li>
+        <strong data-es="¿El ser humano es naturalmente bueno o malo? ¿O depende de las condiciones sociales?"
+                data-en="Is human nature inherently good or bad? Or does it depend on social conditions?"></strong>
+        <p data-es="Depende mucho de las condiciones sociales, ya que bien se sabe que la mayoría de personas 'malas' casi siempre viene de una condición social 'mala'."
+           data-en="It depends a lot on social conditions, since it is well known that most 'bad' people almost always come from 'bad' social conditions."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué relación existe entre poder y conocimiento?"
+                data-en="What relationship exists between power and knowledge?"></strong>
+        <p data-es="Gracias al conocimiento podemos llegar a tener mucho poder sobre ciertos aspectos."
+           data-en="Thanks to knowledge we can gain a lot of power over certain aspects."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Se puede hablar de paz verdadera sin justicia social?"
+                data-en="Can we speak of true peace without social justice?"></strong>
+        <p data-es="Sí, sí se puede."
+           data-en="Yes, it is possible."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cuáles son los límites de la libertad de expresión?"
+                data-en="What are the limits of freedom of expression?"></strong>
+        <p data-es="Cuando estos empiezan a atentar contra una vida o un grupo de personas."
+           data-en="When it begins to threaten a life or a group of people."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cómo influyen las estructuras económicas en la moral y en la ética de las personas?"
+                data-en="How do economic structures influence people's morals and ethics?"></strong>
+        <p data-es="Algunas personas llegan a tener diferentes definiciones de moral y ética."
+           data-en="Some people come to have different definitions of morality and ethics."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué valor tienen las protestas y movimientos sociales en la construcción de una democracia?"
+                data-en="What value do protests and social movements have in building a democracy?"></strong>
+        <p data-es="Estas son muy valiosas ya que gracias a estas se escucha a la sociedad y sus opiniones."
+           data-en="These are very valuable because thanks to them society and its opinions are heard."></p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!--Heidy-->
+  <div class="interview-card" onclick="this.classList.toggle('open')">
+  <div class="interview-summary">
+    <img src="img/heidy.jpg" alt="Heidy Morales" class="interview-photo">
+    <div>
+      <h4 data-es="Heidy Morales" data-en="Heidy Morales">Heidy Morales</h4>
+      <p data-es="6 preguntas sobre filosofía y sociedad"
+         data-en="6 questions on philosophy and society"></p>
+    </div>
+    <button class="toggle-btn" type="button">
+      <img src="img/plus.svg" alt="Abrir">
+    </button>
+  </div>
+
+  <div class="interview-details">
+    <ul>
+      <li>
+        <strong data-es="¿El ser humano es naturalmente bueno o malo? ¿O depende de las condiciones sociales?"
+                data-en="Is human nature inherently good or bad? Or does it depend on social conditions?"></strong>
+        <p data-es="Depende de las condiciones sociales y del criterio de cada quien."
+           data-en="It depends on social conditions and each person's judgment."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué relación existe entre poder y conocimiento?"
+                data-en="What relationship exists between power and knowledge?"></strong>
+        <p data-es="Que mientras más sepas del tema puede ser más útil."
+           data-en="The more you know about a subject, the more useful it can be."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Se puede hablar de paz verdadera sin justicia social?"
+                data-en="Can we speak of true peace without social justice?"></strong>
+        <p data-es="No, yo creo que la justicia va de la mano con la paz."
+           data-en="No, I believe justice goes hand in hand with peace."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cuáles son los límites de la libertad de expresión?"
+                data-en="What are the limits of freedom of expression?"></strong>
+        <p data-es="No sobrepasarse y mantener el respeto."
+           data-en="Not going too far and maintaining respect."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cómo influyen las estructuras económicas en la moral y en la ética de las personas?"
+                data-en="How do economic structures influence people's morals and ethics?"></strong>
+        <p data-es="Por la discriminación puede afectar a una persona que ni tenga los mismos recursos económicos."
+           data-en="Due to discrimination, it can affect a person who does not have the same economic resources."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué valor tienen las protestas y movimientos sociales en la construcción de una democracia?"
+                data-en="What value do protests and social movements have in building a democracy?"></strong>
+        <p data-es="Cambiar a una parte de la sociedad."
+           data-en="They can change a part of society."></p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <!--Darlyn-->
+  <div class="interview-card" onclick="this.classList.toggle('open')">
+  <div class="interview-summary">
+    <img src="img/darlyn.jpg" alt="Darlyn Peralta" class="interview-photo">
+    <div>
+      <h4 data-es="Darlyn Peralta" data-en="Darlyn Peralta">Darlyn Peralta</h4>
+      <p data-es="6 preguntas sobre filosofía y sociedad"
+         data-en="6 questions on philosophy and society"></p>
+    </div>
+    <button class="toggle-btn" type="button">
+      <img src="img/plus.svg" alt="Abrir">
+    </button>
+  </div>
+
+  <div class="interview-details">
+    <ul>
+      <li>
+        <strong data-es="¿El ser humano es naturalmente bueno o malo? ¿O depende de las condiciones sociales?"
+                data-en="Is human nature inherently good or bad? Or does it depend on social conditions?"></strong>
+        <p data-es="Considero que depende de las condiciones sociales, porque nadie actuaría con malicia sin razón alguna a menos de tener una condición o algo."
+           data-en="I believe it depends on social conditions, because no one would act with malice without a reason unless they had a condition or circumstance."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué relación existe entre poder y conocimiento?"
+                data-en="What relationship exists between power and knowledge?"></strong>
+        <p data-es="Que el conocimiento es un impulso para poder tener poder sobre situaciones o tu postura como persona."
+           data-en="Knowledge is a driving force to gain power over situations or to strengthen your stance as a person."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Se puede hablar de paz verdadera sin justicia social?"
+                data-en="Can we speak of true peace without social justice?"></strong>
+        <p data-es="No, como persona nunca estaría tranquila sabiendo las injusticias que vive la sociedad y que en algún caso puedan pasar en mí."
+           data-en="No, as a person I could never feel at peace knowing the injustices society faces and that one day they could happen to me as well."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cuáles son los límites de la libertad de expresión?"
+                data-en="What are the limits of freedom of expression?"></strong>
+        <p data-es="Límites el respeto y la validación; todos pueden decir lo que sea sobre algo o alguien siempre y cuando se refieran con respeto y aprendan a validar las opiniones de los demás."
+           data-en="The limits are respect and validation; everyone can say what they want about something or someone as long as they speak respectfully and learn to validate others' opinions."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Cómo influyen las estructuras económicas en la moral y en la ética de las personas?"
+                data-en="How do economic structures influence people's morals and ethics?"></strong>
+        <p data-es="En el entorno en el que se relacionan y las diferentes oportunidades que presentan desde su realidad."
+           data-en="They influence the environment in which people relate and the different opportunities they face from their reality."></p>
+      </li>
+
+      <li>
+        <strong data-es="¿Qué valor tienen las protestas y movimientos sociales en la construcción de una democracia?"
+                data-en="What value do protests and social movements have in building a democracy?"></strong>
+        <p data-es="En que las personas desean ser escuchadas desde su realidad para poder tener relevancia y obtener mejores resultados."
+           data-en="They matter because people want to be heard from their own reality to gain relevance and achieve better results."></p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </section>
+  
+
+  
+  <!-- === Columnas === -->
+  <section class="home-section" id="columnas">
+    <h3 data-es="Columnas" data-en="Columns">Columnas</h3>
+    <div class="columnas-list">
+
+      <article class="columna-card">
+        <div class="columna-image">
+          <img src="img/autor1.jpg" alt="Autor de la columna">
+        </div>
+        <div class="columna-content">
+          <h4 data-es="Reflexión personal sobre los filósofos y la filosofía aplicada" 
+            data-en="Personal reflection on philosophers and applied philosophy"></h4>
+          <p data-es="A lo largo de este proyecto me di cuenta de algo: todos estos filósofos, desde Nietzsche hasta Amartya Sen, en el fondo se están preguntando lo mismo que nosotros en nuestra vida diaria: ¿cómo vivir mejor, cómo ser libres y cómo construir un mundo más justo? Beauvoir me hizo pensar en cómo el género atraviesa la libertad; Fanon me confrontó con la violencia y la colonización que todavía marcan nuestra historia; Nietzsche me retó a cuestionar los valores que damos por sentado; y Sen me dio un lente práctico para entender que la justicia también es cuestión de oportunidades reales. Incluso en los temas de filosofía aplicada como la paz, la felicidad o los movimientos sociales, lo que noto es que todo se conecta: son debates que todavía siguen vivos y que nos tocan a todos." 
+           data-en="Throughout this project I realized something: all these philosophers, from Nietzsche to Amartya Sen, are essentially asking the same questions we face in our daily lives: how to live better, how to be free, and how to build a fairer world? Beauvoir made me reflect on how gender shapes freedom; Fanon confronted me with the violence and colonization that still mark our history; Nietzsche pushed me to question the values we take for granted; and Sen gave me a practical lens to see that justice is also about real opportunities. Even in the applied philosophy themes like peace, happiness, or social movements, I notice that everything is connected: these are ongoing debates that still matter and affect us all.">
+          </p>
+      </div>
+    </article>
+
+      <article class="columna-card">
+      <div class="columna-image">
+        <img src="img/autor2.jpg" alt="Autor de la columna">
+      </div>
+      <div class="columna-content">
+        <h4 data-es="Cómo la filosofía se conecta con nuestra realidad" 
+      data-en="How philosophy connects with our reality"></h4>
+        <p data-es="Escribir y analizar sobre estos filósofos me hizo notar que la filosofía no es un tema lejano, sino algo que atraviesa nuestras propias experiencias. Nietzsche me recordó que siempre podemos desafiar lo establecido; Beauvoir me mostró que la libertad no puede entenderse sin hablar de las estructuras sociales que nos moldean; Fanon me hizo pensar en cómo la historia colonial sigue influyendo en las luchas actuales; y Sen me inspiró a ver que los derechos humanos deben ser oportunidades reales y no solo ideales escritos. Al unir todo con la filosofía aplicada —justicia, paz, felicidad, movimientos sociales— entendí que la filosofía es, en verdad, un mapa para leer el presente y también una invitación a transformarlo." 
+     data-en="Writing and analyzing these philosophers made me realize that philosophy is not a distant subject, but something that runs through our own experiences. Nietzsche reminded me that we can always challenge what is established; Beauvoir showed me that freedom cannot be understood without addressing the social structures that shape us; Fanon made me think about how colonial history still influences current struggles; and Sen inspired me to see that human rights must be real opportunities and not just written ideals. Connecting it all with applied philosophy —justice, peace, happiness, social movements— I understood that philosophy is truly a map to read the present and also an invitation to transform it.">
+        </p>
+      </div>
+    </article>
+  </div>
+  </section>
+
+  <!-- === Reseñas === -->
+  <section class="home-section" id="resenas">
+    <h3 data-es="Reseñas" data-en="Reviews">Reseñas</h3>
+    <p data-es="Libros, documentales y ensayos comentados críticamente."
+       data-en="Books, documentaries, and essays critically reviewed."></p>
+    
+    <div class="resenas-grid">
+    
+    <!-- Reseñas de Libros -->
+      <!--Beauvoir-->
+    <a href="https://www.amazon.com/-/es/Simone-Beauvoir/dp/030727778X" target="_blank" rel="noopener" class="resena-card">
+      <div class="resena-image">
+        <img src="/img/second-sex.jpg" alt="El segundo sexo - Simone de Beauvoir">
+      </div>
+      <div class="resena-content">
+        <div class="resena-icon">
+          <img src="img/book.svg" alt="Libro">
+        </div>
+        <h4 data-es="El segundo sexo — Simone de Beauvoir" 
+            data-en="The Second Sex — Simone de Beauvoir"></h4>
+        <p data-es="Un clásico del feminismo que analiza cómo las mujeres han sido históricamente definidas como 'el otro'. Una obra clave para entender género y libertad."
+           data-en="A feminist classic analyzing how women have historically been defined as 'the other'. A key work to understand gender and freedom."></p>
+      </div>
+    </a>
+
+    <!--Nietzsche -->
+<a href="https://www.amazon.com/-/es/FRIEDRICH-NIETZSCHE-ALL%C3%81-BIEN-AURORA/dp/8497945522/ref=sr_1_2?crid=EXRUBL41B9VK&dib=eyJ2IjoiMSJ9.SYDHdODrf5-q2tQSGY33x2k4jB_a5lYgLtf-3QKrOmaCjwSLZKMGaM5J-E2g_JDEjYRsvYPBNgNCweYtYfiaZHnXH3Re02YbXAAM9DBKTtVschUDv0N5gfuPmwyQOUzDxXZ4C6KEdTuODZoWq8EhZOF78GyqFzTfbIasEi0ueOx7-KPaAH2SPSKoPjdA91YnxfQ6aQJ2dIMuaEc96VRIG7Ls7kSpD1tjbSeV-jVPlLM.ICGPD-78h_I6HfdAPZNFMs0sDE55tWImVFqL9heCN58&dib_tag=se&keywords=friedrich+nietzsche+mas+alla+del+bien&qid=1759629437&sprefix=mas+alla+del+bien+%2Caps%2C246&sr=8-2" target="_blank" rel="noopener" class="resena-card">
+  <div class="resena-image">
+    <img src="/img/beyond-good-evil.jpg" alt="Más allá del bien y del mal - Nietzsche">
+  </div>
+  <div class="resena-content">
+    <div class="resena-icon">
+      <img src="img/book.svg" alt="Libro">
+    </div>
+    <h4 data-es="Más allá del bien y del mal — Friedrich Nietzsche" 
+        data-en="Beyond Good and Evil — Friedrich Nietzsche"></h4>
+    <p data-es="Una de las obras filosóficas más influyentes de Nietzsche, donde cuestiona la moral tradicional y plantea nuevas formas de pensar la verdad y los valores." 
+       data-en="One of Nietzsche’s most influential works, where he challenges traditional morality and proposes new ways of thinking about truth and values."></p>
+  </div>
+</a>
+
+<!-- Fanon -->
+<a href="https://www.amazon.com/-/es/Los-condenados-tierra-Frantz-Fanon/dp/8481361518/ref=sr_1_1?crid=LPE2EH76O4YB&dib=eyJ2IjoiMSJ9.vSCVW_JGWV74bkoWdYNrhg.LL_X47j6elCJSHvNC43125DwlA3LBYGDi8aAOTzc3eU&dib_tag=se&keywords=los+condenados+de+la+tierra+frantz+fanon&qid=1759629498&sprefix=frantz+fanon+los+c%2Caps%2C259&sr=8-1" target="_blank" rel="noopener" class="resena-card">
+  <div class="resena-image">
+    <img src="/img/wretched-earth.jpg" alt="Los condenados de la tierra">
+  </div>
+  <div class="resena-content">
+    <div class="resena-icon">
+      <img src="img/book.svg" alt="Libro">
+    </div>
+    <h4 data-es="Los condenados de la tierra — Frantz Fanon" 
+        data-en="The Wretched of the Earth — Frantz Fanon"></h4>
+    <p data-es="Obra fundamental en los estudios poscoloniales, Fanon analiza la violencia de la colonización y la lucha por la liberación de los pueblos." 
+       data-en="A foundational work in postcolonial studies, Fanon analyzes the violence of colonization and the struggle for liberation."></p>
+  </div>
+</a>
+
+<!--Amartya Sen -->
+<a href="https://www.amazon.com/-/es/Amartya-Sen/dp/0674036131" target="_blank" rel="noopener" class="resena-card">
+  <div class="resena-image">
+    <img src="/img/idea-justice.jpg" alt="La idea de la justicia - Amartya Sen">
+  </div>
+  <div class="resena-content">
+    <div class="resena-icon">
+      <img src="img/book.svg" alt="Libro">
+    </div>
+    <h4 data-es="La idea de la justicia — Amartya Sen" 
+        data-en="The Idea of Justice — Amartya Sen"></h4>
+    <p data-es="Un análisis innovador de la justicia que propone un enfoque práctico y comparativo para enfrentar las desigualdades reales en el mundo." 
+       data-en="An innovative analysis of justice proposing a practical and comparative approach to addressing real-world inequalities."></p>
+  </div>
+</a>
+
+    <!-- Reseñas de documentales -->
+      <!--Documental 1-->
+    <a href="https://www.youtube.com/watch?v=TO2PsTnqgUE" target="_blank" rel="noopener" class="resena-card">
+      <div class="resena-image">
+        <img src="/img/not-negro.jpg" alt="I Am Not Your Negro Documentary">
+      </div>
+      <div class="resena-content">
+        <div class="resena-icon">
+          <img src="img/documentary.svg" alt="Documental">
+        </div>
+        <h4 data-es="I Am Not Your Negro — Raoul Peck" 
+            data-en="I Am Not Your Negro — Raoul Peck"></h4>
+        <p data-es="Basado en los escritos de James Baldwin, este documental examina el racismo en Estados Unidos con una narrativa poética y poderosa."
+           data-en="Based on James Baldwin's writings, this documentary examines racism in the United States with a poetic and powerful narrative."></p>
+      </div>
+    </a>
+
+    <!-- Documental 2 -->
+<a href="https://www.youtube.com/watch?v=KwtdD-5m2yY" target="_blank" rel="noopener" class="resena-card">
+  <div class="resena-image">
+    <img src="/img/nietzsche-documentary.jpg" alt="Nietzsche – La Voluntad de Poder y el Superhombre">
+  </div>
+  <div class="resena-content">
+    <div class="resena-icon">
+      <img src="img/documentary.svg" alt="Documental">
+    </div>
+    <h4 data-es="Nietzsche – La Voluntad de Poder y el Superhombre" 
+        data-en="Nietzsche – The will to power and the Übermensch"></h4>
+    <p data-es="Un documental que explora la vida y las ideas de Nietzsche, mostrando cómo sus pensamientos radicales marcaron la filosofía moderna." 
+       data-en="A documentary exploring Nietzsche's life and ideas, showing how his radical thoughts shaped modern philosophy."></p>
+  </div>
+</a>
+
+    <!-- Reseñas de ensayos -->
+      <!--Ensayo 1-->
+    <a href="https://mronline.org/2024/11/01/frantz-fanon-and-the-struggle-against-colonisation/" target="_blank" rel="noopener" class="resena-card">
+      <div class="resena-image">
+        <img src="/img/fanon-assay.jpg" alt="Ensayo sobre Frantz Fanon">
+      </div>
+      <div class="resena-content">
+        <div class="resena-icon">
+          <img src="img/assay.svg" alt="Ensayo">
+        </div>
+        <h4 data-es="Frantz Fanon y las luchas actuales — mronline" 
+            data-en="Frantz Fanon and today's struggles — mronline"></h4>
+        <p data-es="Un ensayo que conecta el pensamiento de Fanon sobre colonialismo y violencia con movimientos contemporáneos como Black Lives Matter."
+           data-en="An essay connecting Fanon's thought on colonialism and violence with contemporary movements like Black Lives Matter."></p>
+      </div>
+    </a>
+
+    <!-- Ensayo 2 -->
+<a href="https://plato.stanford.edu/entries/beauvoir/" target="_blank" rel="noopener" class="resena-card">
+  <div class="resena-image">
+    <img src="/img/beauvoir-assay.jpg" alt="Ensayo académico sobre Simone de Beauvoir">
+  </div>
+  <div class="resena-content">
+    <div class="resena-icon">
+          <img src="img/assay.svg" alt="Ensayo">
+        </div>
+    <h4 data-es="Ensayo sobre Simone de Beauvoir — Stanford Encyclopedia of Philosophy" 
+        data-en="Essay on Simone de Beauvoir — Stanford Encyclopedia of Philosophy"></h4>
+    <p data-es="Un análisis académico detallado de la filosofía de Beauvoir, con énfasis en género, libertad y ética existencialista." 
+       data-en="A detailed academic analysis of Beauvoir's philosophy, focusing on gender, freedom, and existentialist ethics."></p>
+  </div>
+</a>
+
+<!-- Ensayo 3 -->
+<a href="https://www.nobelprize.org/prizes/economic-sciences/1998/sen/lecture/" target="_blank" rel="noopener" class="resena-card">
+  <div class="resena-image">
+    <img src="/img/sen-assay.jpg" alt="Amartya Sen Nobel Lecture">
+  </div>
+  <div class="resena-content">
+    <div class="resena-icon">
+          <img src="img/assay.svg" alt="Ensayo">
+        </div>
+    <h4 data-es="Ensayo: La Pobreza como Privación de Capacidades — Amartya Sen" 
+        data-en="Essay: Poverty as Capability Deprivation — Amartya Sen"></h4>
+    <p data-es="Texto basado en la conferencia Nobel de Sen (1998), donde explica cómo la pobreza debe entenderse más allá de los ingresos y en términos de libertades reales." 
+       data-en="Text based on Sen's Nobel lecture (1998), where he explains how poverty must be understood beyond income and in terms of real freedoms."></p>
+  </div>
+</a>
+
+
+  </div>
+
+  </section>
+
+  <!-- === Galería === -->
+  <section class="home-section" id="galeria">
+    <h3 data-es="Galería de imágenes" data-en="Image Gallery">Galería de imágenes</h3>
+    
+    <div class="gallery-grid">
+
+    <!-- Imagen 1 -->
+<div class="gallery-item">
+  <img src="/img/nietzsche-portrait.jpg" alt="Friedrich Nietzsche">
+  <div class="overlay">
+    <span data-es="Friedrich Nietzsche (1844–1900). Filósofo alemán que cuestionó la moral tradicional y la religión." 
+          data-en="Friedrich Nietzsche (1844–1900). German philosopher who questioned traditional morality and religion."></span>
+  </div>
+</div>
+
+    <!-- Imagen 2 -->
+<div class="gallery-item">
+  <img src="/img/beauvoir.jpg" alt="Simone de Beauvoir">
+  <div class="overlay">
+    <span data-es="Simone de Beauvoir (1908–1986). Escritora y filósofa feminista, autora de El segundo sexo." 
+          data-en="Simone de Beauvoir (1908–1986). Writer and feminist philosopher, author of The Second Sex."></span>
+  </div>
+</div>
+
+<!-- Imagen 3 -->
+<div class="gallery-item">
+  <img src="/img/fanon.jpg" alt="Frantz Fanon">
+  <div class="overlay">
+    <span data-es="Frantz Fanon (1925–1961). Psiquiatra y pensador anticolonial, autor de Los condenados de la tierra." 
+          data-en="Frantz Fanon (1925–1961). Psychiatrist and anti-colonial thinker, author of The Wretched of the Earth."></span>
+  </div>
+</div>
+
+<!-- Imagen 4 -->
+<div class="gallery-item">
+  <img src="/img/marcha.jpg" alt="Marcha social contemporánea">
+  <div class="overlay">
+    <span data-es="Marcha feminista global. Manifestaciones en defensa de los derechos de las mujeres." 
+          data-en="Global Women’s March. Demonstrations in defense of women’s rights."></span>
+  </div>
+</div>
+    
+
+<!-- Imagen 5 -->
+<div class="gallery-item">
+  <img src="/img/mov-protesta-chile.jpg" alt="Protestas en Chile 2019">
+  <div class="overlay">
+    <span data-es="Protestas en Chile (2019), donde miles exigieron justicia social y equidad." 
+          data-en="Protests in Chile (2019), where thousands demanded social justice and equity."></span>
+  </div>
+</div>
+
+<!-- Imagen 6 -->
+<div class="gallery-item">
+  <img src="/img/peace-mural.jpg" alt="Mural por la paz">
+  <div class="overlay">
+    <span data-es="Mural artístico en México representando la paz y la esperanza comunitaria." 
+          data-en="Artistic mural in Mexico representing peace and community hope."></span>
+  </div>
+</div>
+
+<!-- Imagen 7 -->
+<div class="gallery-item">
+  <img src="/img/caida-muro-berlin.jpg" alt="Caída del Muro de Berlín">
+  <div class="overlay">
+    <span data-es="La caída del Muro de Berlín (1989), símbolo del fin de la Guerra Fría y de nuevas libertades." 
+          data-en="The fall of the Berlin Wall (1989), symbol of the end of the Cold War and new freedoms."></span>
+  </div>
+</div>
+
+<!-- Imagen 8 -->
+<div class="gallery-item">
+  <img src="/img/primavera-arabe.jpg" alt="Primavera Árabe protestas">
+  <div class="overlay">
+    <span data-es="Protestas de la Primavera Árabe (2010), que transformaron Medio Oriente y el Norte de África." 
+          data-en="Arab Spring protests (2010), which transformed the Middle East and North Africa."></span>
+  </div>
+</div>
+
+<!-- Imagen 9 -->
+<div class="gallery-item">
+  <img src="/img/nietzsche-libro.jpg" alt="Obra de Nietzsche">
+  <div class="overlay">
+    <span data-es="Edición antigua de 'Así habló Zaratustra', una de las obras más influyentes de Nietzsche." 
+          data-en="Old edition of 'Thus Spoke Zarathustra', one of Nietzsche’s most influential works."></span>
+  </div>
+</div>
+
+<!-- Imagen 10 -->
+<div class="gallery-item">
+  <img src="/img/fanon-libro.jpg" alt="Frantz Fanon con su libro">
+  <div class="overlay">
+    <span data-es="Frantz Fanon con un ejemplar de 'Los condenados de la tierra', obra fundamental en la lucha anticolonial." 
+          data-en="Frantz Fanon with a copy of 'The Wretched of the Earth', a fundamental work in the anticolonial struggle."></span>
+  </div>
+</div>
+
+<!-- Imagen 11 -->
+<div class="gallery-item">
+  <img src="/img/amartya-sen-premio.jpg" alt="Amartya Sen recibiendo un premio">
+  <div class="overlay">
+    <span data-es="Amartya Sen recibiendo el Premio Nobel de Economía en 1998 por su trabajo sobre pobreza y desarrollo." 
+          data-en="Amartya Sen receiving the Nobel Prize in Economics in 1998 for his work on poverty and development."></span>
+  </div>
+</div>
+
+<!-- Imagen 12 -->
+<div class="gallery-item">
+  <img src="/img/protesta-paz.jpg" alt="Protesta por la paz">
+  <div class="overlay">
+    <span data-es="Marcha internacional por la paz y el fin de los conflictos armados." 
+          data-en="International march for peace and the end of armed conflicts."></span>
+  </div>
+</div>
+
+  </div>
+  </section>
+
+</main>
+
+    <!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <!-- Logo y descripción -->
+    <div class="footer-col">
+      <img src="/img/logo.png" alt="Logo FiloLing" class="logo">
+      <p data-es="Un espacio para explorar filosofía y lenguaje desde nuevas perspectivas." 
+         data-en="A space to explore philosophy and language from new perspectives.">
+         Un espacio para explorar filosofía y lenguaje desde nuevas perspectivas.
+      </p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div class="footer-col">
+      <h4 data-es="Enlaces rápidos" data-en="Quick Links">Enlaces rápidos</h4>
+      <ul>
+        <li><a href="/index.html" data-es="Home" data-en="Home">Home</a></li>
+        <li><a href="/index.html#reportajes" data-es="Reportajes" data-en="Reports">Reportajes</a></li>
+        <li><a href="/index.html#noticias" data-es="Noticias" data-en="News">Noticias</a></li>
+        <li><a href="/index.html#entrevistas" data-es="Entrevistas" data-en="Interviews">Entrevistas</a></li>
+        <li><a href="/index.html#resenas" data-es="Reseñas" data-en="Reviews">Reseñas</a></li>
+        <li><a href="/index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-col">
+      <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+      <p>Email: <a href="https://workspace.google.com/intl/es-419/products/gmail/">equipo@filoling.com</a></p>
+      <p data-es="Villa Nueva, Guatemala, 2025" data-en="Villa Nueva, Guatemala, 2025">Villa Nueva, Guatemala, 2025</p>
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <div class="footer-bottom">
+    <p data-es="© FiloLing — Un espacio para pensar juntos — Yankarlo Morán y Jackeline Lucas" 
+       data-en="© FiloLing — A space to think together — Yankarlo Moran and Jackeline Lucas">
+       © FiloLing — Un espacio para pensar juntos — Yankarlo Morán
+    </p>
+    <p data-es="Hecho con HTML + CSS + JS" 
+       data-en="Made with HTML + CSS + JS">
+       Hecho con HTML + CSS + JS
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

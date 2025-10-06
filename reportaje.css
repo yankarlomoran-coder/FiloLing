@@ -1,0 +1,607 @@
+/* Estilos exclusivos para páginas de reportaje */
+/* ===== Título principal del filósofo ===== */
+.philo-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 2rem 0 1.5rem 0;
+  color: var(--accent);
+  padding-left: 0.8rem;
+  border-left: 6px solid var(--accent-2);
+}
+
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+}
+
+article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.6rem;
+}
+
+article p {
+  margin-bottom: 1.4rem;
+  text-align: justify;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--muted-bg);
+  border-left: 4px solid var(--accent);
+  font-style: italic;
+  color: var(--muted-text);
+}
+
+blockquote::before {
+  content: "❝";
+  vertical-align: top;
+  margin-right: .4rem;
+  color: var(--accent);
+}
+
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; 
+}
+
+figure figcaption {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin-top: .5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem 1rem;
+  }
+  
+  article h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.image-round img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.image-square img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* === Sidebar exclusivo para páginas de reportaje === */
+.sidebar {
+  width: 300px;
+  padding: 1rem;
+  background: var(--sidebar-bg);
+  border-left: 1px solid var(--accent);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.3rem;
+}
+
+/* === Cards en la sidebar === */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.author-card {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.author-card a.author-link {
+  display: flex;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  padding: 0.4rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.author-card a.author-link:hover {
+  background: var(--accent-bg);
+  transform: translateY(-2px);
+}
+
+.author-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.author-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.author-card p {
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.author-card a {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.author-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* === Noticias en la sidebar === */
+.news {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.news .thumb {
+  flex-shrink: 0;
+}
+
+.news .thumb img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.news p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Opinión personal  */
+.opinion .photo img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Lecturas recomendadas links  */
+.sidebar-list a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.sidebar-list a:hover {
+  text-decoration: underline;
+}
+
+/* === Frases destacadas === */
+.quotes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quotes li {
+  margin-bottom: 0.8rem;
+  font-style: italic;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.quotes li::before {
+  content: "❝";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
+
+/* === Cronología (línea del tiempo) === */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+  position: relative;
+}
+
+.timeline li {
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timeline li strong {
+  font-weight: 600;
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+
+.timeline li:hover {
+  background: var(--accent-bg);
+  border-radius: 6px;
+  padding-left: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+/* === Arte relacionado === */
+.art-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.art-gallery figure {
+  text-align: center;
+}
+
+.art-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.art-gallery figcaption {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  margin-top: 0.3rem;
+}
+
+/* === Multimedia === */
+.multimedia {
+  list-style: none;
+  padding-left: 0;
+}
+
+.multimedia li {
+  margin-bottom: 0.6rem;
+}
+
+.multimedia a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.multimedia a:hover {
+  text-decoration: underline;
+}
+
+/* === Sabías que === */
+.facts {
+  list-style: none;
+  padding-left: 0;
+}
+
+.facts li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.facts li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* === Encuesta en la sidebar === */
+.poll p {
+  margin-bottom: 0.8rem;
+}
+
+.poll label {
+  display: block;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.poll input {
+  margin-right: 0.5rem;
+}
+
+.poll-btn {
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.poll-btn:hover {
+  background: #333;
+}
+
+#poll-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+#poll-results li {
+  margin-bottom: 0.4rem;
+  background: var(--accent-bg);
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+
+/* === Layout general: main + sidebar === */
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    box-shadow: none;
+  }
+}
+
+.sidebar blockquote {
+  font-style: italic;
+  padding: 0.8rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-bg);
+  border-radius: 6px;
+}
+
+/* ============================================
+    Estilos de la página de filosofía aplicada
+=============================================== */
+
+/* ===== Índice de contenidos ===== */
+.toc {
+  background: var(--bg, #f9f9f9);
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent, #0f172a);
+  border-bottom: 2px solid var(--accent, #0f172a);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc li {
+  margin: 0.4rem 0;
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.95rem;
+}
+
+.toc li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--accent-2, #0ea5a4);
+  font-weight: bold;
+}
+
+.toc a {
+  text-decoration: none;
+  color: var(--accent, #0f172a);
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.toc a:hover {
+  color: var(--accent-2, #0ea5a4);
+  padding-left: 4px;
+}
+
+/* ===== Sidebar filosofía aplicada ===== */
+
+/* ===== Casos destacados ===== */
+.case-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Cada caso como tarjeta */
+.case {
+  background: var(--card-bg);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Imagen del caso */
+.case img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto del caso */
+.case p {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text, #333);
+}
+
+/* ============================
+   Imágenes en paralelo
+   ============================ */
+.image-row {
+  display: flex;
+  gap: 1rem; /* separación entre imágenes */
+  margin: 1.5rem 0;
+}
+
+.image-row figure {
+  flex: 1;
+  text-align: center;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Asegura que el texto se vea bien */
+.image-row figcaption {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  margin-top: 0.3rem;
+}
+
+/* === Glosario en la sidebar === */
+.glossary {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.glossary li {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.glossary strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* === Personajes influyentes en sidebar === */
+.influential-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.influential-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 10px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.influential-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.influential-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid var(--accent-color, #444);
+}
+
+.influential-card h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--accent, #333);
+}
+
+.influential-card p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-color, #555);
+}

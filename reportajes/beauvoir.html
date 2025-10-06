@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="es" data-current="beauvoir">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simone de Beauvoir — Reportaje | FiloLing</title>
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <meta name="description" content="Reportaje sobre Simone de Beauvoir — filosofía, feminismo y libertad." />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../reportaje.css">
+  <script src="../app.js" defer></script>
+  <script src="../sidebar.js" defer></script>
+</head>
+<body>
+  <div class="site">
+
+    <!-- === Buscador + subtítulo === -->
+    <div class="search-container">
+      <p class="dynamic-subtitle"
+         data-es="“El feminismo es una forma de vivir individualmente y de luchar colectivamente.”"
+         data-en="“Feminism is a way of living individually and fighting collectively.”">
+         "El feminismo es una forma de vivir individualmente y de luchar colectivamente."
+      </p>
+      <div class="search-box">
+        <div id="search-results" class="search-results"></div>
+        <input type="text" id="search-input" placeholder="Buscar..."
+               data-es="Buscar..." data-en="Search...">
+        <button type="submit" class="search-btn" aria-label="Buscar">
+          <img src="/img/search.svg" alt="Buscar">
+        </button>
+      </div>
+    </div>
+
+    <!-- === HEADER === -->
+    <header class="header">
+      <a href="/index.html" class="brand">
+        <img src="/img/logo.png" alt="Logo FiloLing" class="logo">
+        <div>
+          <h1>FiloLing</h1>
+          <p data-es="Un espacio para pensar juntos."
+             data-en="A space to think together.">Un espacio para pensar juntos.</p>
+        </div>
+      </a>
+
+
+  <nav class="nav">
+        <div class="dropdown">
+          <a href="/index.html#reportajes" data-es="Reportajes" data-en="Reports">Reportajes</a>
+          <div class="dropdown-content">
+            <a href="nietzsche.html">Friedrich Nietzsche</a>
+            <a href="beauvoir.html">Simone de Beauvoir</a>
+            <a href="fanon.html">Frantz Fanon</a>
+            <a href="sen.html">Amartya Sen</a>
+            <a href="filosofia-aplicada.html" data-es="Filosofía Aplicada" data-en="Applied Philosophy">Filosofía Aplicada</a>
+          </div>
+        </div>
+        <a href="/index.html#noticias" data-es="Noticias" data-en="News">Noticias</a>
+        <a href="/index.html#entrevistas" data-es="Entrevistas" data-en="Interviews">Entrevistas</a>
+        <a href="/index.html#columnas" data-es="Columnas" data-en="Columns">Columnas</a>
+        <a href="/index.html#resenas" data-es="Reseñas" data-en="Reviews">Reseñas</a>
+        <a href="/index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a>
+      </nav>
+
+      <div class="header-extras">
+        <div class="lang">
+          <button class="lang-btn" data-lang="es" aria-pressed="true">
+            <img src="/img/flag-es.svg" alt="Español"> ES
+          </button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">
+            <img src="/img/flag-us.svg" alt="English"> EN
+          </button>
+        </div>
+        <button class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <!-- === CONTENIDO PRINCIPAL === -->
+<div class="content">
+  <main>
+    <h1 class="philo-title">Simone de Beauvoir</h1>
+    <article>
+      <section>
+        <h2 data-es="Introducción" data-en="Introduction">Introducción</h2>
+        <p data-es="Simone de Beauvoir (1908–1986) fue una filósofa, escritora y activista francesa, reconocida como una de las figuras más influyentes del pensamiento feminista y existencialista del siglo XX. A través de su obra, reflexionó sobre la libertad, la opresión, la construcción social del género y la responsabilidad individual en un mundo marcado por desigualdades. Su legado trasciende la filosofía, impactando la literatura, la política y los movimientos por los derechos de las mujeres."
+           data-en="Simone de Beauvoir (1908–1986) was a French philosopher, writer, and activist, recognized as one of the most influential figures of 20th-century feminist and existentialist thought. Through her work, she reflected on freedom, oppression, the social construction of gender, and individual responsibility in a world marked by inequality. Her legacy transcends philosophy, impacting literature, politics, and the women’s rights movement.">
+        </p>
+         <!-- Imagen Beauvoir -->
+        <figure>
+          <img src="../img/beauvoir-portrait.jpg" alt="Retrato de Simone de Beauvoir">
+          <figcaption data-es="Retrato de Simone de Beauvoir"
+                      data-en="Portrait of Simone de Beauvoir"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="Contexto histórico y biográfico" data-en="Historical and Biographical Context">Contexto histórico y biográfico</h2>
+        <p data-es="Beauvoir nació en París en 1908, en el seno de una familia burguesa católica. Desde joven se destacó por su inteligencia y su rebeldía frente a los límites sociales impuestos a las mujeres de su época. Estudió filosofía en la Sorbona, donde conoció a Jean-Paul Sartre, con quien mantuvo una relación intelectual y sentimental durante toda su vida. <br><br>
+                    El contexto del siglo XX —guerras mundiales, lucha por los derechos civiles, debates sobre el colonialismo y la liberación sexual— influyó profundamente en su pensamiento. Beauvoir entendió la filosofía no como una actividad abstracta, sino como una herramienta para cuestionar y transformar las estructuras sociales y culturales que perpetuaban la opresión."
+           data-en="Beauvoir was born in Paris in 1908, into a Catholic bourgeois family. From a young age, she stood out for her intelligence and her defiance against the social limits imposed on women of her time. She studied philosophy at the Sorbonne, where she met Jean-Paul Sartre, with whom she maintained an intellectual and personal relationship throughout her life. <br><br>
+                    The context of the 20th century—world wars, the struggle for civil rights, debates on colonialism, and sexual liberation—deeply influenced her thinking. Beauvoir understood philosophy not as an abstract activity but as a tool to question and transform the social and cultural structures that perpetuated oppression.">
+           
+        </p>
+         <!-- Imagen contextual -->
+        <figure>
+          <img src="../img/beauvoir-context.jpg" alt="Contexto histórico de Beauvoir">
+          <figcaption data-es="Contexto histórico de Beauvoir"
+                      data-en="Beauvoir's historical context"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="El segundo sexo" data-en="The Second Sex">El segundo sexo</h2>
+        <p data-es="Publicado en 1949, El segundo sexo es la obra más célebre de Beauvoir y un pilar del feminismo contemporáneo. En este ensayo monumental, analiza cómo las mujeres han sido históricamente definidas en relación al hombre como “lo Otro”, negándoles la posibilidad de ser sujetos plenos. <br><br>
+                    La famosa frase “No se nace mujer: se llega a serlo” resume su tesis: la feminidad no es una esencia natural, sino una construcción social impuesta. Con ello, abrió un camino para pensar la libertad de las mujeres más allá de los roles tradicionales y cuestionar el patriarcado como sistema estructural."
+           data-en="Published in 1949, The Second Sex is Beauvoir’s most famous work and a cornerstone of contemporary feminism. In this monumental essay, she analyzes how women have historically been defined in relation to men as “the Other,” denying them the possibility of being full subjects. <br><br>
+                    The famous phrase “One is not born, but rather becomes, a woman” sums up her thesis: femininity is not a natural essence but a socially imposed construction. With this, she opened a path to think about women’s freedom beyond traditional roles and to question patriarchy as a structural system.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Existencialismo y libertad" data-en="Existentialism and Freedom">Existencialismo y libertad</h2>
+        <p data-es="Influenciada por el existencialismo, Beauvoir defendió que la existencia precede a la esencia: las personas no nacen con un destino predefinido, sino que se construyen a través de sus elecciones. Para ella, la libertad no era absoluta ni aislada, sino siempre situada en un contexto social. <br><br>
+                    Esto implicaba que la opresión de las mujeres no podía reducirse a una cuestión individual, sino que debía analizarse en relación con estructuras históricas, económicas y culturales. La filosofía de Beauvoir se convirtió así en una llamada a la responsabilidad colectiva y a la acción transformadora."
+           data-en="Influenced by existentialism, Beauvoir argued that existence precedes essence: people are not born with a predefined destiny but build themselves through their choices. For her, freedom was neither absolute nor isolated but always situated within a social context. <br><br>
+                    This implied that women’s oppression could not be reduced to an individual issue but had to be analyzed in relation to historical, economic, and cultural structures. Beauvoir’s philosophy thus became a call to collective responsibility and transformative action.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Compromiso político y social" data-en="Political and Social Commitment">Compromiso político y social</h2>
+        <p data-es="Más allá de su producción teórica, Beauvoir se comprometió activamente con las luchas sociales y políticas de su tiempo. Participó en movimientos por los derechos de las mujeres, apoyó la descolonización en Argelia y denunció las injusticias sociales en Francia y en el mundo. <br><br>
+                    Firmó manifiestos en defensa del derecho al aborto, luchó por la igualdad educativa y laboral, y usó su influencia pública para visibilizar las voces marginadas. Su compromiso reflejaba su convicción de que la filosofía debía estar en diálogo con la realidad y no encerrada en la academia."
+           data-en="Beyond her theoretical production, Beauvoir was actively involved in the social and political struggles of her time. She participated in women’s rights movements, supported decolonization in Algeria, and denounced social injustices in France and around the world. <br><br>
+                    She signed manifestos defending the right to abortion, fought for educational and workplace equality, and used her public influence to give visibility to marginalized voices. Her commitment reflected her conviction that philosophy should be in dialogue with reality rather than confined to academia.">
+           
+        </p>
+        <!-- Imagen simbólica -->
+        <figure>
+          <img src="../img/beauvoir-struggles.jpg" alt="Luchas sociales de beauvoir">
+          <figcaption data-es="Luchas sociales de beauvoir"
+                      data-en="Beauvoir's social struggles"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="Feminismo y el cuerpo" data-en="Feminism and the Body">Feminismo y el cuerpo</h2>
+        <p data-es="Beauvoir prestó especial atención a cómo el cuerpo de las mujeres era culturalmente construido y socialmente controlado. Argumentó que la biología no determina el destino; en cambio, son las normas sociales y las relaciones de poder las que condicionan los roles femeninos. Este énfasis en la corporalidad influyó en teorías feministas posteriores, particularmente en torno a los derechos reproductivos, la sexualidad y la política del cuerpo."
+           data-en="Beauvoir paid particular attention to how women’s bodies were culturally constructed and socially controlled. She argued that biology does not determine destiny; instead, it is through social norms and power relations that women’s roles are constrained. This emphasis on embodiment has influenced later feminist theories, particularly those dealing with reproductive rights, sexuality, and body politics.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Crítica al matrimonio y a las estructuras familiares" data-en="Critique of Marriage and Family Structures">Crítica al matrimonio y a las estructuras familiares</h2>
+        <p data-es="En sus escritos, Beauvoir fue crítica con el matrimonio tradicional, que veía como una institución que a menudo perpetuaba la subordinación y dependencia económica de las mujeres. Aunque no rechazaba el amor o la pareja, abogaba por relaciones basadas en la libertad, la igualdad y la autenticidad. Esta crítica resonó con fuerza durante los movimientos feministas de los años sesenta y setenta, que cuestionaban los roles domésticos impuestos a las mujeres."
+           data-en="In her writings, Beauvoir was critical of traditional marriage, which she saw as an institution that often perpetuated women’s subordination and economic dependence. While not rejecting love or partnership, she called for relationships based on freedom, equality, and authenticity. This critique resonated strongly during the feminist movements of the 1960s and 1970s, which sought to challenge domestic roles assigned to women.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Influencia en el pensamiento feminista posterior" data-en="Influence on Later Feminist Thought">Influencia en el pensamiento feminista posterior</h2>
+        <p data-es="Las contribuciones filosóficas de Beauvoir abrieron el camino a académicas y activistas feministas en todo el mundo. Pensadoras como Judith Butler y bell hooks desarrollaron sus ideas para expandir el feminismo hacia debates sobre identidad, raza, clase y teoría queer. Su insistencia en concebir el género como una construcción social sigue siendo una base fundamental en los estudios contemporáneos de género."
+           data-en="Beauvoir’s philosophical contributions opened the way for feminist scholars and activists around the world. Thinkers such as Judith Butler and bell hooks built upon her insights to expand feminism into broader discussions of identity, race, class, and queer theory. Her insistence on viewing gender as socially constructed remains a foundation for contemporary gender studies.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Impacto de El segundo sexo en el feminismo contemporáneo" data-en="Impact of The Second Sex on Contemporary Feminism">Impacto de El segundo sexo en el feminismo contemporáneo</h2>
+        <p data-es="La publicación de El segundo sexo marcó un punto de inflexión en la historia del feminismo. Fue duramente criticado en su época por considerarse “escandaloso” y “antifemenino”, pero con el tiempo se convirtió en un texto fundacional para la segunda ola del feminismo en la década de 1960. Autoras como Betty Friedan y Kate Millett reconocieron la influencia de Beauvoir en la conceptualización de la opresión estructural de las mujeres. <br><br>
+                    En América Latina, su obra inspiró debates sobre la condición femenina en sociedades atravesadas por dictaduras, desigualdades de clase y luchas sociales. La frase “lo personal es político”, central en los feminismos de los años setenta, encuentra en Beauvoir un antecedente filosófico sólido."
+           data-en="The publication of The Second Sex marked a turning point in the history of feminism. Harshly criticized at the time as “scandalous” and “anti-feminine,” it later became a foundational text for second-wave feminism in the 1960s. Authors such as Betty Friedan and Kate Millett acknowledged Beauvoir’s influence in conceptualizing the structural oppression of women. <br><br>
+                    In Latin America, her work inspired debates on the female condition in societies marked by dictatorships, class inequalities, and social struggles. The phrase “the personal is political,” central to 1970s feminism, finds in Beauvoir a strong philosophical precedent.">
+           
+        </p>
+        <!-- Imagen simbólica -->
+        <figure>
+          <img src="../img/beauvoir-impact.jpg" alt="Impacto en el feminismo contemporaneo">
+          <figcaption data-es="Beauvoir en el feminismo contemporaneo"
+                      data-en="Beauvoir in contemporary feminism"></figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 data-es="Literatura y escritura como resistencia" data-en="Literature and Writing as Resistance">Literatura y escritura como resistencia</h2>
+        <p data-es="Además de filósofa, Beauvoir fue novelista, ensayista y memorialista. Obras como La invitada (1943), Memorias de una joven formal (1958) y La mujer rota (1967) muestran su interés por explorar la subjetividad femenina en un mundo de opresiones. <br><br>
+                    La escritura, para Beauvoir, no era un refugio, sino un campo de batalla. Ella misma afirmó: “Escribir es una manera de querer la libertad” (Beauvoir, 1963/1992). A través de la literatura, cuestionó los modelos de feminidad impuestos, narró los dilemas existenciales de las mujeres y propuso nuevas formas de subjetividad."
+           data-en="In addition to being a philosopher, Beauvoir was a novelist, essayist, and memoirist. Works such as She Came to Stay (1943), Memoirs of a Dutiful Daughter (1958), and The Woman Destroyed (1967) reveal her interest in exploring female subjectivity in a world of oppressions. <br><br>
+                    For Beauvoir, writing was not a refuge but a battlefield. She herself affirmed: “To write is a way of wanting freedom” (Beauvoir, 1963/1992). Through literature, she questioned imposed models of femininity, narrated women’s existential dilemmas, and proposed new forms of subjectivity.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Críticas y debates en torno a su pensamiento" data-en="Criticisms and Debates Around Her Thought">Críticas y debates en torno a su pensamiento</h2>
+        <p data-es="Aunque El segundo sexo es considerado un clásico, también ha sido objeto de críticas. Algunas corrientes feministas posteriores, como el feminismo interseccional y la teoría queer, señalan que Beauvoir tendía a universalizar la experiencia de la mujer sin considerar plenamente las diferencias de raza, clase o sexualidad. <br><br>
+                    Judith Butler, por ejemplo, ha reconocido la importancia de Beauvoir en la deconstrucción del género, pero también la ha cuestionado por mantener, en parte, una visión binaria de la identidad sexual (Butler, 1990/2007). Estas críticas no restan relevancia a su obra, sino que muestran cómo sigue siendo un punto de partida imprescindible para debates contemporáneos."
+           data-en="Although The Second Sex is considered a classic, it has also been the subject of criticism. Some later feminist currents, such as intersectional feminism and queer theory, argue that Beauvoir tended to universalize women’s experiences without fully considering differences of race, class, or sexuality. <br><br>
+                    Judith Butler, for example, has recognized Beauvoir’s importance in deconstructing gender but also criticized her for maintaining, to some extent, a binary view of sexual identity (Butler, 1990/2007). These criticisms do not diminish her relevance; rather, they show how her work remains an indispensable starting point for contemporary debates.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Relevancia actual" data-en="Contemporary Relevance">Relevancia actual</h2>
+        <p data-es="El pensamiento de Beauvoir sigue siendo clave en debates sobre género, identidad y justicia social. Sus reflexiones han inspirado corrientes como el feminismo de la segunda ola, la teoría queer y los estudios de género. <br><br>
+                    En un mundo que todavía enfrenta desigualdades estructurales, su llamado a la libertad, la autonomía y la igualdad conserva plena vigencia. Además, su crítica a la construcción social del género continúa desafiando discursos que naturalizan la subordinación de las mujeres."
+           data-en="Beauvoir’s thought remains central in debates on gender, identity, and social justice. Her reflections have inspired currents such as second-wave feminism, queer theory, and gender studies. <br><br>
+                    In a world that still faces structural inequalities, her call for freedom, autonomy, and equality remains fully relevant. Moreover, her critique of the social construction of gender continues to challenge discourses that naturalize women’s subordination.">
+           
+        </p>
+      </section>
+
+      <section>
+        <h2 data-es="Conclusión" data-en="Conclusion">Conclusión</h2>
+        <p data-es="Simone de Beauvoir no solo fue una filósofa brillante, sino también una escritora comprometida con la transformación del mundo. Su vida y obra nos recuerdan que la libertad nunca está garantizada, sino que debe conquistarse día a día frente a las estructuras que limitan nuestro potencial. <br><br>
+                    Su célebre afirmación —“No se nace mujer: se llega a serlo”— permanece como un llamado a repensar la condición humana desde la responsabilidad, la creatividad y la justicia."
+           data-en="Simone de Beauvoir was not only a brilliant philosopher but also a writer committed to transforming the world. Her life and work remind us that freedom is never guaranteed but must be conquered day by day against the structures that limit our potential. <br><br>
+                    Her famous statement—“One is not born, but rather becomes, a woman”—endures as a call to rethink the human condition through responsibility, creativity, and justice.">
+           
+        </p>
+        <blockquote data-es="“No se nace mujer: se llega a serlo. Ningún destino biológico, psicológico o económico define la figura que la hembra humana presenta en la sociedad: es la civilización en su conjunto la que elabora ese producto intermedio entre el varón y el castrado que se califica como femenino.” <br>
+                              (El segundo sexo, 1949, p. 267)"
+                    data-en="“One is not born, but rather becomes, a woman. No biological, psychological, or economic destiny defines the figure that the human female presents in society: it is civilization as a whole that elaborates this intermediate product between the male and the eunuch, which is called feminine.” <br>
+                              (The Second Sex, 1949, p. 267)">
+          
+        </blockquote>
+      </section>
+    </article>
+  </main>
+
+  <!-- Sidebar -->
+<aside class="sidebar" aria-label="Barra lateral con navegación y extras">
+
+  <!-- Reportajes -->
+  <section class="sidebar-section card reportajes">
+        <h3 data-es="Otros filósofos" data-en="Other philosophers">Otros filósofos</h3>
+
+        <article class="author-card" data-id="nietzsche">
+      <a href="nietzsche.html" class="author-link">
+        <img src="../img/nietzsche-portrait.jpg" alt="Friedrich Nietzsche">
+        <div>
+          <h4>Friedrich Nietzsche</h4>
+          <p data-es="Filósofo alemán, crítico de la moral y pionero en el pensamiento radical."
+             data-en="German philosopher, critic of morality and pioneer in radical thought."></p>
+        </div>
+      </a>
+    </article>
+
+        <article class="author-card" data-id="fanon">
+          <a href="fanon.html" class="author-link">
+            <img src="../img/fanon.jpg" alt="Frantz Fanon">
+            <div>
+              <h4>Frantz Fanon</h4>
+              <p data-es="Psiquiatra y teórico de la descolonización, analizó identidad y opresión."
+               data-en="Psychiatrist and decolonial theorist, analyzed identity and oppression."></p>
+          </div>
+        </a>
+      </article>
+
+        <article class="author-card" data-id="sen">
+          <a href="sen.html" class="author-link">
+            <img src="../img/sen.jpg" alt="Amartya Sen">
+            <div>
+              <h4>Amartya Sen</h4>
+              <p data-es="Economista y filósofo indio, defensor de la libertad y el desarrollo humano."
+               data-en="Indian economist and philosopher, advocate of freedom and human development."></p>
+          </div>
+        </a>
+      </article>
+
+      <article class="author-card" data-id="aplicada">
+          <a href="filosofia-aplicada.html" class="author-link">
+            <img src="../img/aplicada.jpg" alt="Filosofía aplicada">
+            <div>
+              <h4 data-es="Filosofía Aplicada" data-en="Applied Philosophy">Filosofía Aplicada</h4>
+              <p data-es="Exploración de cómo la filosofía se conecta con problemas prácticos y actuales."
+                data-en="Exploration of how philosophy connects with practical and current issues."></p>
+          </div>
+        </a>
+      </article>
+    </section>
+
+  <!-- Reseñas -->
+  <section class="sidebar-section card">
+    <h3 data-es="Reseñas" data-en="Reviews">Reseñas</h3>
+    <div class="review">
+      <p data-es="'El segundo sexo' sigue siendo un referente esencial para comprender la construcción social del género."
+         data-en="'The Second Sex' remains an essential reference to understand the social construction of gender.">
+      </p>
+    </div>
+    <div class="review">
+      <p data-es="El estilo de Beauvoir combina rigor filosófico con compromiso político, lo que la hace accesible y profunda."
+         data-en="Beauvoir’s style combines philosophical rigor with political commitment, making her both accessible and profound.">
+      </p>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section class="sidebar-section card">
+    <h3 data-es="Noticias" data-en="News">Noticias</h3>
+    <article class="news">
+      <div class="thumb"><img src="/img/feminism.jpg" alt="Feminismo" /></div>
+      <p data-es="Beauvoir en debates sobre feminismo contemporáneo (2025): su frase 'No se nace mujer: se llega a serlo' inspira políticas de igualdad. [Fuente: The Guardian]"
+         data-en="Beauvoir in contemporary feminism debates (2025): her phrase 'One is not born, but rather becomes, a woman' inspires equality policies. [Source: The Guardian]">
+      </p>
+    </article>
+    <article class="news">
+      <div class="thumb"><img src="/img/education.jpg" alt="Educación" /></div>
+      <p data-es="Enseñanza de Beauvoir en universidades (2024): su obra es clave en programas de filosofía y estudios de género. [Fuente: Times Higher Education]"
+         data-en="Beauvoir taught in universities (2024): her work is central in philosophy and gender studies programs. [Source: Times Higher Education]">
+      </p>
+    </article>
+    <article class="news">
+      <div class="thumb"><img src="/img/aniversary.jpg" alt="75 Aniversario" /></div>
+      <p data-es="Conmemoración del 75 aniversario de 'El segundo sexo' (2024): eventos en París destacan su impacto en los derechos de la mujer. [Fuente: Le Monde]"
+         data-en="75th anniversary of 'The Second Sex' (2024): events in Paris highlight her impact on women's rights. [Source: Le Monde]">
+      </p>
+    </article>
+  </section>
+
+
+  <!-- Opinión Personal -->
+  <section class="sidebar-section card">
+    <h3 data-es="Opinión personal" data-en="Personal opinion">Opinión personal</h3>
+
+    <article class="opinion">
+      <div class="photo"><img src="/img/autor1.jpg" alt="Autor 1"><strong>Yankarlo Morán</strong></div>
+      <p data-es="Leer a Beauvoir cambió mi forma de comprender la libertad: no es un ideal abstracto, sino una práctica diaria."
+         data-en="Reading Beauvoir changed my understanding of freedom: it is not an abstract ideal but a daily practice.">
+      </p>
+    </article>
+
+    <article class="opinion">
+      <div class="photo"><img src="/img/autor2.jpg" alt="Autor 2"><strong>Jackeline Lucas</strong></div>
+      <p data-es="'El segundo sexo' me hizo ver cómo lo cotidiano está atravesado por estructuras de poder invisibles."
+         data-en="'The Second Sex' made me realize how everyday life is shaped by invisible power structures.">
+      </p>
+    </article>
+  </section>
+
+  <!-- Lecturas recomendadas -->
+      <section class="sidebar-section card">
+        <h3 data-es="Lecturas recomendadas" data-en="Recommended readings">Lecturas recomendadas</h3>
+        <ul class="sidebar-list">
+          <li><a href="https://plato.stanford.edu/entries/beauvoir/" target="_blank">Stanford Encyclopedia of Philosophy</a></li>
+          <li><a href="https://iep.utm.edu/beauvoir/" target="_blank">Internet Encyclopedia of Philosophy</a></li>
+          <li><a href="https://www.britannica.com/biography/Simone-de-Beauvoir" target="_blank">Britannica — Beauvoir</a></li>
+        </ul>
+      </section>
+  
+  <!-- Frases destacadas -->
+  <section class="sidebar-section card">
+    <h3 data-es="Frases destacadas" data-en="Key quotes">Frases destacadas</h3>
+    <ul class="quotes">
+      <li data-es="No se nace mujer: se llega a serlo."
+          data-en="One is not born, but rather becomes, a woman."></li>
+      <li data-es="El problema de la mujer siempre ha sido un problema de hombres."
+          data-en="The problem of woman has always been a problem of men."></li>
+      <li data-es="El opresor no sería tan fuerte si no tuviera cómplices entre los propios oprimidos."
+          data-en="The oppressor would not be so strong if he did not have accomplices among the oppressed themselves."></li>
+    </ul>
+  </section>
+
+  <!-- Mini cronología -->
+  <section class="sidebar-section card">
+    <h3 data-es="Cronología" data-en="Timeline">Cronología</h3>
+    <ul class="timeline">
+      <li><strong>1908</strong> — <span data-es="Nace en París, Francia." data-en="Born in Paris, France."></span></li>
+      <li><strong>1949</strong> — <span data-es="Publica 'El segundo sexo'." data-en="Publishes 'The Second Sex'."></span></li>
+      <li><strong>1986</strong> — <span data-es="Fallece en París, Francia" data-en="Dies in Paris, France."></span></li>
+    </ul>
+  </section>
+
+  <!-- Arte relacionado -->
+  <section class="sidebar-section card">
+    <h3 data-es="Arte relacionado" data-en="Related art">Arte relacionado</h3>
+    <div class="art-gallery">
+      <figure>
+        <img src="../img/beauvoir-art1.jpg" alt="Arte inspirado en Beauvoir">
+        <figcaption data-es="Retrato ilustrado de Simone de Beauvoir"
+                    data-en="Illustrated portrait of Simone de Beauvoir"></figcaption>
+      </figure>
+      <figure>
+        <img src="../img/beauvoir-art2.jpg" alt="Edición de El segundo sexo">
+        <figcaption data-es="Portada clásica de 'El segundo sexo'"
+                    data-en="Classic cover of 'The Second Sex'"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Multimedia -->
+  <section class="sidebar-section card">
+    <h3 data-es="Multimedia" data-en="Multimedia">Multimedia</h3>
+    <ul class="multimedia">
+      <li><a href="https://www.youtube.com/watch?v=pa1buzn9Sjw&pp=ygUdc2ltb25lIGRlIGJlYXV2b2lyIGRvY3VtZW50YWw%3D" target="_blank" rel="noopener">
+        📺 <span data-es="Documental: Simone de Beauvoir y el feminismo" 
+                 data-en="Documentary: Simone de Beauvoir and feminism"></span>
+      </a></li>
+      <li><a href="https://www.youtube.com/watch?v=PH6wBrUkZcQ&pp=ygUdc2ltb25lIGRlIGJlYXV2b2lyIGRvY3VtZW50YWw%3D" target="_blank" rel="noopener">
+        📺 <span data-es="Nadie nace mujer — Ideas de Beauvoir" 
+                 data-en="No one is born a woman — Ideas of Beauvoir"></span>
+      </a></li>
+    </ul>
+  </section>
+
+  <!-- Sabías que -->
+  <section class="sidebar-section card">
+    <h3 data-es="¿Sabías que...?" data-en="Did you know...?">¿Sabías que...?</h3>
+    <ul class="facts">
+      <li data-es="Fue la primera mujer en aprobar el examen de filosofía de la Sorbona." 
+          data-en="She was the first woman to pass philosophy exams at the Sorbonne."></li>
+      <li data-es="Mantuvo una correspondencia intelectual con escritores como Camus y Merleau-Ponty." 
+          data-en="She maintained intellectual correspondence with writers like Camus and Merleau-Ponty."></li>
+      <li data-es="Está enterrada junto a Sartre en el cementerio de Montparnasse, en París." 
+          data-en="She is buried alongside Sartre at the Montparnasse cemetery in Paris."></li>
+    </ul>
+  </section>
+
+  <!-- Encuesta -->
+<section class="sidebar-section card poll">
+  <h3 data-es="Encuesta" data-en="Poll">Encuesta</h3>
+  <p data-es="¿Qué idea de Beauvoir consideras más transformadora?" 
+     data-en="Which idea of Beauvoir do you consider most transformative?">
+     ¿Qué idea de Beauvoir consideras más transformadora?
+  </p>
+
+  <form id="poll-form">
+    <label>
+      <input type="radio" name="vote" value="segundo">
+      <span data-es="El segundo sexo" data-en="The Second Sex">El segundo sexo</span>
+    </label><br>
+    <label>
+      <input type="radio" name="vote" value="libertad">
+      <span data-es="La libertad situada" data-en="Situated freedom">La libertad situada</span>
+    </label><br>
+    <label>
+      <input type="radio" name="vote" value="opresion">
+      <span data-es="Crítica a la opresión de género" data-en="Critique of gender oppression">Crítica a la opresión de género</span>
+    </label><br>
+    <label>
+      <input type="radio" name="vote" value="accion">
+      <span data-es="Compromiso político" data-en="Political commitment">Compromiso político</span>
+    </label><br>
+
+    <button type="submit" class="poll-btn" 
+      data-es="Votar" data-en="Vote">Votar</button>
+  </form>
+
+  <div id="poll-results" style="display:none;"></div>
+</section>
+
+
+  </aside>
+</div>
+
+    <!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <!-- Logo y descripción -->
+    <div class="footer-col">
+      <img src="/img/logo.png" alt="Logo FiloLing" class="logo">
+      <p data-es="Un espacio para explorar filosofía y lenguaje desde nuevas perspectivas." 
+         data-en="A space to explore philosophy and language from new perspectives.">
+         Un espacio para explorar filosofía y lenguaje desde nuevas perspectivas.
+      </p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div class="footer-col">
+      <h4 data-es="Enlaces rápidos" data-en="Quick Links">Enlaces rápidos</h4>
+      <ul>
+        <li><a href="/index.html" data-es="Home" data-en="Home">Home</a></li>
+        <li><a href="/index.html#reportajes" data-es="Reportajes" data-en="Reports">Reportajes</a></li>
+        <li><a href="/index.html#noticias" data-es="Noticias" data-en="News">Noticias</a></li>
+        <li><a href="/index.html#entrevistas" data-es="Entrevistas" data-en="Interviews">Entrevistas</a></li>
+        <li><a href="/index.html#resenas" data-es="Reseñas" data-en="Reviews">Reseñas</a></li>
+        <li><a href="/index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-col">
+      <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+      <p>Email: <a href="https://workspace.google.com/intl/es-419/products/gmail/">equipo@filoling.com</a></p>
+      <p data-es="Villa Nueva, Guatemala, 2025" data-en="Villa Nueva, Guatemala, 2025">Villa Nueva, Guatemala, 2025</p>
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <div class="footer-bottom">
+    <p data-es="© FiloLing — Un espacio para pensar juntos — Yankarlo Morán y Jackeline Lucas" 
+       data-en="© FiloLing — A space to think together — Yankarlo Moran and Jackeline Lucas">
+       © FiloLing — Un espacio para pensar juntos — Yankarlo Morán
+    </p>
+    <p data-es="Hecho con HTML + CSS + JS" 
+       data-en="Made with HTML + CSS + JS">
+       Hecho con HTML + CSS + JS
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

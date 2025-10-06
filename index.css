@@ -1,0 +1,704 @@
+/* === Layout general para index === */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* === Hero principal === */
+.hero {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  animation: fadeInHero 1.2s ease-in-out;
+}
+
+.site-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  animation: slideInDown 1.3s ease;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  animation: fadeUp 1.4s ease;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  animation: fadeUp 1.6s ease;
+}
+
+.hero-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+
+/* === Animaciones === */
+@keyframes fadeInHero {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* === Featured posts === */
+.featured-posts {
+  padding: 1.5rem;
+  background: var(--card, #f8fafc);
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,.05);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.featured-posts h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.featured-card {
+  background: var(--bg);
+  padding: 1rem;
+  border-radius: .8rem;
+  transition: transform .2s ease, box-shadow .2s ease, background 0.3s ease;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+}
+
+.featured-card blockquote {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  padding-left: 0.3rem;
+}
+
+
+[data-theme="dark"] .featured-card {
+  border-color: #333;
+}
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.featured-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: .4rem;
+  color: var(--text);
+}
+.featured-card p {
+  font-size: .95rem;
+  color: var(--muted);
+}
+
+/* === Secciones principales === */
+.home-section {
+  background: var(--card, #f8fafc);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,.05);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.home-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+  color: var(--accent);
+}
+
+.home-section .meta {
+  font-size: .9rem;
+  color: var(--muted);
+  margin-bottom: .8rem;
+}
+
+/* === Listas tipo blog === */
+.reportajes-list, .news-list {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.reportajes-list article, .news-list li {
+  background: var(--bg);
+  padding: .9rem 1rem;
+  border-radius: .6rem;
+  border: 1px solid #e5e5e5;
+  transition: background .2s ease, color .2s ease;
+}
+[data-theme="dark"] .reportajes-list article,
+[data-theme="dark"] .news-list li {
+  border-color: #333;
+}
+
+.reportajes-list article:hover,
+.news-list li:hover {
+  background: var(--accent-bg);
+}
+
+.reportajes-list h4, .news-list a {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.reportajes-list p, .news-list span {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* ====== Tarjetas de filósofos / Filosofía Aplicada ====== */
+.reportajes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.philo-card {
+  display: block;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.philo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  background: var(--accent-bg);
+}
+
+.philo-header {
+  margin-bottom: 0.8rem;
+}
+
+.philo-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.philo-header .life {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.philo-card ul.ideas {
+  margin: 0.8rem 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.philo-card ul.ideas li {
+  margin-bottom: 0.35rem;
+}
+
+.philo-card blockquote {
+  margin: 0.8rem 0 0;
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--accent);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Imagen en tarjetas de filósofos */
+.philo-image {
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.philo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.philo-card:hover .philo-image img {
+  transform: scale(1.05);
+}
+
+
+/* ===== Ajustes en modo oscuro ===== */
+[data-theme="dark"] .philo-card {
+  background: var(--bg);      /* usa el fondo oscuro */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .philo-card:hover {
+  background: var(--accent-bg);
+}
+
+[data-theme="dark"] .philo-card blockquote {
+  color: var(--text); /* que se lea bien en modo oscuro */
+}
+
+
+
+/* ==== Noticias / Actualidad ==== */
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 👈 siempre 2 columnas */
+  gap: var(--gap);
+  margin-top: 1rem;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Imagen de la noticia */
+.news-card .news-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.news-card .news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.05);
+}
+
+/* Contenido de la noticia */
+.news-card .news-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.news-card h4 {
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--accent-2);
+}
+
+.news-card p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* ==== Adaptación a modo oscuro ==== */
+[data-theme="dark"] .news-card {
+  background: var(--accent-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .news-card h4 {
+  color: var(--accent);
+}
+
+[data-theme="dark"] .news-card p {
+  color: var(--muted);
+}
+
+/* ======== ENTREVISTAS ======== */
+
+.interview-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  cursor: pointer; /* <- hace que se vea clickeable */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Resumen (visible siempre) */
+.interview-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.interview-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.interview-summary h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.interview-summary p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Efecto hover */
+.interview-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+/* Botón de expandir */
+.toggle-btn {
+  border: none;
+  background: var(--accent);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  padding: 0;
+}
+
+.toggle-btn img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1); /* blanco sobre el fondo */
+}
+
+.toggle-btn:hover {
+  background: var(--accent-2);
+}
+
+/* Estado normal: icono "+" */
+.toggle-btn img {
+  content: url("img/plus.svg");
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+/* Cuando la card está abierta: icono "-" */
+.interview-card.open .toggle-btn img {
+  content: url("img/minus.svg");
+}
+
+
+/* Bloque de preguntas/respuestas */
+.interview-details {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--accent-bg);
+  padding: 0 1.25rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  transition: max-height 0.5s ease, padding 0.5s ease, background 0.3s ease;
+}
+
+/* Cuando se abre */
+.interview-card.open .interview-details {
+  max-height: 800px;
+  padding: 1rem 1.25rem;
+}
+
+/* Lista interna */
+.interview-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interview-details li {
+  margin-bottom: 1rem;
+}
+
+.interview-details strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+}
+
+.interview-details p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+
+/* ====== Opiniones (Columnas) ====== */
+.columna-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: var(--card);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Más anchas que una tarjeta normal */
+.columna-card.wide {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Imagen del autor */
+.columna-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  flex-shrink: 0;
+}
+
+/* Contenido */
+.columna-content {
+  flex: 1;
+}
+
+.columna-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.columna-content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  text-align: justify;
+}
+
+/* Hover sutil */
+.columna-card:hover {
+  background: var(--accent-bg);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* ====== Adaptación a modo oscuro ====== */
+[data-theme="dark"] .columna-card {
+  background: var(--accent-bg);
+  border-color: #333;
+}
+
+[data-theme="dark"] .columna-content p {
+  color: var(--text);
+}
+
+[data-theme="dark"] .columna-card:hover {
+  background: rgba(14, 165, 164, 0.12);
+}
+
+
+/* ======== RESEÑAS ======== */
+.resenas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap);
+  margin-top: 1.5rem;
+}
+
+.resena-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  background: var(--card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resena-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.resena-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.resena-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resena-icon img {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  filter: invert(36%) sepia(95%) saturate(640%) hue-rotate(135deg) brightness(95%) contrast(90%);
+}
+
+.resena-content h4 {
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--accent);
+}
+
+.resena-content p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ======== MODO OSCURO ======== */
+[data-theme="dark"] .resena-card {
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--accent-bg);
+}
+
+[data-theme="dark"] .resena-card:hover {
+  box-shadow: 0 6px 14px rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .resena-content p {
+  color: var(--muted);
+}
+
+[data-theme="dark"] .resena-icon img {
+  filter: invert(80%) sepia(5%) saturate(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+
+/* === Galería de imágenes === */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay (oculto por defecto) */
+.gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  line-height: 1.4;
+}
+
+/* Efecto al pasar el mouse */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Adaptación a modo oscuro */
+[data-theme="dark"] .gallery-item .overlay {
+  background: rgba(0, 225, 255, 0.4);
+  color: var(--accent-2);
+}
