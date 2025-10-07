@@ -297,31 +297,71 @@ themeToggle.addEventListener("click", () => {
 ];
 
 
-    let index = 0;
     const quoteElement = document.getElementById("hero-quote");
+  if (!quoteElement) return;
 
-    function showQuote() {
-      // Animación de salida
+  let index = 0;
+  const intervalMs = 7000; // cada 7s (puedes ajustar)
+
+  // Devuelve el idioma actual consultando localStorage (fuente de verdad)
+  function getCurrentLang() {
+    return localStorage.getItem("filoling_lang") || "es";
+  }
+
+  // Muestra la cita actual (con fade)
+  function showQuote() {
+    const q = quotes[index];
+    const lang = getCurrentLang();
+
+    // Fade out
+    quoteElement.style.transition = "opacity 0.35s ease";
+    quoteElement.style.opacity = 0;
+
+    setTimeout(() => {
+      // Actualizamos atributos bilingües (útiles para setLanguage también)
+      quoteElement.setAttribute("data-es", q.es);
+      quoteElement.setAttribute("data-en", q.en);
+
+      // Insertamos en el idioma correcto
+      quoteElement.innerHTML = lang === "en" ? q.en : q.es;
+
+      // Fade in
+      quoteElement.style.opacity = 1;
+
+      // avanzar índice
+      index = (index + 1) % quotes.length;
+    }, 350); // debe coincidir con el fade out
+  }
+
+  // Mostrar la primera cita inmediatamente
+  showQuote();
+
+  // Intervalo para rotar citas
+  const rot = setInterval(showQuote, intervalMs);
+
+  // Cuando el idioma cambia (evento despachado por app.js), actualizamos la cita visible.
+  // Esto evita que el usuario tenga que volver a pulsar EN/ES
+  document.addEventListener("filoling:langChanged", (e) => {
+    // Tomamos el idioma nuevo del detalle del evento si viene, si no del localStorage
+    const newLang = (e && e.detail && e.detail.lang) ? e.detail.lang : getCurrentLang();
+
+    // Actualizar el texto actual (no tocar el index)
+    const currentEs = quoteElement.getAttribute("data-es");
+    const currentEn = quoteElement.getAttribute("data-en");
+
+    if (currentEs || currentEn) {
+      // hacemos un pequeño fade para que sea suave
       quoteElement.style.opacity = 0;
-
       setTimeout(() => {
-        // Cambio de cita
-        const q = quotes[index];
-        quoteElement.innerHTML = q.es;
-        quoteElement.setAttribute("data-es", q.es);
-        quoteElement.setAttribute("data-en", q.en);
-
-        // Animación de entrada
+        quoteElement.innerHTML = newLang === "en" ? (currentEn || currentEs) : (currentEs || currentEn);
         quoteElement.style.opacity = 1;
-
-        // Avanzar al siguiente
-        index = (index + 1) % quotes.length;
-      }, 1000); // tiempo para el fade out
+      }, 250);
+    } else {
+      // Si por alguna razón no existían atributos, forzamos un showQuote inmediato
+      showQuote();
     }
-
-    // Primera cita
-    showQuote();
-
-    // Cambiar cada 7 segundos
-    setInterval(showQuote, 7000);
   });
+
+  // Si necesitas detener la rotación cuando el usuario abandona la pestaña
+  window.addEventListener("blur", () => clearInterval(rot));
+});
